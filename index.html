@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ezra Anya | Brand, media and communications strategy</title>
+<meta name="description" content="Portfolio and CV of Ezra Anya, a product and brand designer and communications strategist advising on corporate communications, media and PR, and brand strategy.">
+<meta name="author" content="Ezra Anya">
+<meta name="theme-color" content="#020306">
+<link rel="canonical" href="https://www.teaadvisory.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="teaadvisory">
+<meta property="og:title" content="Ezra Anya | teaadvisory">
+<meta property="og:description" content="Brand, media and communications strategy for organisations that want to be understood.">
+<meta property="og:url" content="https://www.teaadvisory.com/">
+<meta property="og:image" content="https://www.teaadvisory.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ezra Anya | teaadvisory">
+<meta name="twitter:description" content="Brand, media and communications strategy for organisations that want to be understood.">
+<meta name="twitter:image" content="https://www.teaadvisory.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ezra Anya","jobTitle":"Product and Brand Designer, Communications Strategist","url":"https://www.teaadvisory.com/","sameAs":["https://www.linkedin.com/in/theezraanya/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout concept: a black room lit by drifting deep sea blue light, with the
+   content set as a compact editorial CV on panes of liquid glass. Single dark world. */
+:root{
+  color-scheme: dark;
+  --bg:#020306;
+  --ink:#F5F5F5;
+  --ink-2:#A3A3A3;
+  --ink-3:#6B6B6B;            /* decorative only */
+  --sea:#0B4C7E;              /* deep sea blue: fills and buttons, white text */
+  --sea-hi:#1265A3;           /* button hover */
+  --sea-deep:#06263F;
+  --tide:#7CC4F2;             /* sea tint for text on black, AA safe */
+  --glow:rgba(18,101,163,.55);
+  --on-sea:#FFFFFF;
+  --glass:rgba(255,255,255,.055);
+  --glass-strong:rgba(255,255,255,.085);
+  --line:rgba(255,255,255,.14);
+  --line-soft:rgba(255,255,255,.08);
+  --shadow:0 24px 60px -24px rgba(0,0,0,.85), 0 2px 6px rgba(0,0,0,.4);
+  --hl-top:inset 0 1px 0 rgba(255,255,255,.18);
+  --font-display:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --font-body:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r-lg:32px; --r-md:24px; --r-sm:14px;
+  --step-0:clamp(.98rem,.95rem + .15vw,1.06rem);
+  --step-1:clamp(1.1rem,1.04rem + .3vw,1.28rem);
+  --step-2:clamp(1.35rem,1.2rem + .6vw,1.75rem);
+  --step-3:clamp(1.9rem,1.5rem + 1.8vw,3rem);
+  --step-4:clamp(2.3rem,1.6rem + 3.6vw,4.4rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--step-0);line-height:1.7;overflow-x:clip;-webkit-font-smoothing:antialiased}
+*,*::before,*::after{box-sizing:border-box}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0;text-wrap:balance;color:var(--ink)}
+p{margin:0}
+a{color:var(--tide);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#A9D9F7}
+:focus-visible{outline:2px solid var(--tide);outline-offset:3px;border-radius:8px}
+.hl{font-style:normal;color:var(--tide);text-shadow:0 0 30px var(--glow)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-60px;z-index:200;background:var(--sea);color:var(--on-sea);padding:10px 16px;border-radius:10px;font-family:var(--font-display);font-weight:700}
+.skip:focus{top:12px}
+
+/* ambient light */
+.ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.7;will-change:transform}
+.blob.b1{width:46vmax;height:46vmax;left:-14vmax;top:-12vmax;background:radial-gradient(circle,rgba(11,76,126,.6),rgba(11,76,126,0) 65%);animation:drift1 38s ease-in-out infinite alternate}
+.blob.b2{width:38vmax;height:38vmax;right:-12vmax;top:28vh;background:radial-gradient(circle,rgba(18,101,163,.45),rgba(18,101,163,0) 65%);animation:drift2 44s ease-in-out infinite alternate}
+.blob.b3{width:30vmax;height:30vmax;left:22vw;bottom:-14vmax;background:radial-gradient(circle,rgba(6,38,63,.6),rgba(6,38,63,0) 65%);animation:drift3 52s ease-in-out infinite alternate}
+.blob.b4{width:18vmax;height:18vmax;left:58vw;top:6vh;background:radial-gradient(circle,rgba(124,196,242,.22),rgba(124,196,242,0) 65%);animation:drift2 60s ease-in-out infinite alternate-reverse}
+@keyframes drift1{to{transform:translate(18vw,22vh) scale(1.12)}}
+@keyframes drift2{to{transform:translate(-20vw,-14vh) scale(.9)}}
+@keyframes drift3{to{transform:translate(16vw,-26vh) scale(1.15)}}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.06;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+.page{position:relative;z-index:2}
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
+
+/* glass */
+.glass{position:relative;background:linear-gradient(160deg,var(--glass-strong),var(--glass) 55%);-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);border:1px solid var(--line);border-radius:var(--r-md);box-shadow:var(--hl-top),var(--shadow)}
+.glass.lg{border-radius:var(--r-lg)}
+.sheen::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .5s var(--ease);background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.10),rgba(255,255,255,.03) 35%,transparent 60%)}
+.sheen:hover::after{opacity:1}
+.liquid{border-color:transparent}
+.liquid::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 0 22px rgba(255,255,255,.035);filter:url(#liquid);pointer-events:none}
+
+/* buttons */
+.btn{--h:48px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:var(--h);padding:0 22px;border-radius:999px;font-family:var(--font-display);font-weight:700;font-size:.9rem;letter-spacing:.01em;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .35s var(--ease),background-color .25s,box-shadow .35s,color .25s,border-color .25s;white-space:nowrap}
+.btn-primary{background:var(--sea);color:var(--on-sea);box-shadow:0 10px 30px -10px var(--glow),inset 0 1px 0 rgba(255,255,255,.22)}
+.btn-primary:hover{background:var(--sea-hi);color:var(--on-sea);transform:translateY(-1px);box-shadow:0 16px 40px -10px var(--glow),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--ink);border-color:var(--line);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.btn-ghost:hover{border-color:var(--tide);color:var(--tide)}
+.btn-sm{--h:38px;padding:0 16px;font-size:.8rem}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;padding-top:14px}
+.bar{display:flex;align-items:center;gap:16px;min-height:64px;padding:8px 8px 8px 22px;border-radius:999px}
+.logo{font-family:var(--font-display);font-weight:800;font-size:1.25rem;letter-spacing:-.04em;color:var(--ink);text-decoration:none;margin-right:auto}
+.logo span{color:var(--tide)}
+.logo:hover{color:var(--ink)}
+.nav{display:none;gap:2px}
+.nav a{font-family:var(--font-display);font-weight:600;font-size:.84rem;color:var(--ink-2);text-decoration:none;padding:8px 12px;border-radius:999px;transition:color .2s,background-color .2s}
+.nav a:hover{color:var(--ink);background:rgba(255,255,255,.06)}
+.nav a[aria-current="true"]{color:var(--tide);background:rgba(255,255,255,.06)}
+.bar .btn-primary{display:none}
+.menu-btn{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--ink);cursor:pointer}
+.menu-btn svg{width:20px;height:20px}
+.mobile-nav{margin-top:8px;padding:10px;border-radius:var(--r-md);display:grid;gap:2px}
+.mobile-nav a{font-family:var(--font-display);font-weight:600;color:var(--ink);text-decoration:none;padding:12px 14px;border-radius:12px}
+.mobile-nav a:hover{background:rgba(255,255,255,.06);color:var(--tide)}
+.mobile-nav .btn{margin-top:8px;color:var(--on-sea)}
+@media (min-width:980px){
+  .nav{display:flex}
+  .bar .btn-primary{display:inline-flex}
+  .menu-btn,.mobile-nav{display:none!important}
+}
+
+/* sections */
+section{scroll-margin-top:96px}
+.section{padding-block:clamp(56px,7vw,96px)}
+.eyebrow{font-family:var(--font-display);font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--tide)}
+.h2{font-size:var(--step-3);font-weight:800;letter-spacing:-.035em;line-height:1.05}
+.lead{color:var(--ink-2);max-width:62ch;font-size:var(--step-1);line-height:1.6}
+.section-head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px)}
+.grid12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.grid12>*{grid-column:1/-1;min-width:0}
+.label-sm{font-family:var(--font-display);font-weight:600;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+
+/* hero */
+.hero{padding-block:clamp(44px,7vw,88px) clamp(32px,4vw,48px)}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:999px;font-family:var(--font-display);font-weight:600;font-size:.8rem;color:var(--ink)}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--tide);box-shadow:0 0 0 4px rgba(18,101,163,.25),0 0 14px var(--glow)}
+.hero h1{font-size:var(--step-4);font-weight:800;letter-spacing:-.045em;line-height:1.02;margin-top:24px;max-width:17ch}
+.hero-body{margin-top:clamp(28px,4vw,44px);align-items:stretch}
+.bio{padding:clamp(22px,3.2vw,36px)}
+.bio p{max-width:68ch}
+.bio p+p{margin-top:.9em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+/* portrait with floating facts */
+.portrait{position:relative;overflow:hidden;min-height:440px;padding:0;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;z-index:-2}
+.portrait .fallback{position:absolute;inset:0;z-index:-3;display:grid;place-items:center;background:radial-gradient(120% 80% at 50% 20%,rgba(18,101,163,.55),rgba(6,38,63,.6) 45%,rgba(2,3,6,.95) 85%)}
+.portrait .fallback span{font-family:var(--font-display);font-weight:800;font-size:clamp(5rem,4rem + 6vw,9rem);letter-spacing:-.06em;color:rgba(255,255,255,.12);margin-bottom:30%}
+.portrait::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(2,3,6,0) 35%,rgba(2,3,6,.55) 65%,rgba(2,3,6,.92));border-radius:inherit;pointer-events:none}
+.floats{display:grid;gap:10px;padding:16px;margin:0}
+.float{padding:14px 16px;border-radius:18px;background:rgba(10,16,24,.45);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.16);box-shadow:var(--hl-top),0 12px 30px -12px rgba(0,0,0,.7)}
+.float dt{font-family:var(--font-display);font-weight:600;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tide)}
+.float dd{margin:2px 0 0;line-height:1.45;font-size:.93rem;color:var(--ink)}
+.float:nth-child(2){margin-left:18%}
+@media (prefers-reduced-motion:no-preference){
+  .float{animation:bob 7s ease-in-out infinite}
+  .float:nth-child(2){animation-delay:-3.5s}
+}
+@keyframes bob{50%{transform:translateY(-5px)}}
+@media (min-width:900px){
+  .hero-body .bio{grid-column:1/span 8}
+  .hero-body .portrait{grid-column:9/span 4;min-height:100%}
+}
+
+/* tracka UI mockup */
+.ui-thumb{height:210px;overflow:hidden;border-radius:16px;display:flex;justify-content:center;padding-top:16px;background:radial-gradient(90% 90% at 50% 0%,rgba(18,101,163,.35),rgba(255,255,255,.02) 70%);border:1px solid var(--line-soft);-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.ui-row{display:flex;gap:18px;overflow-x:auto;padding:8px 2px 14px;scroll-snap-type:x mandatory}
+.ui-row .phone{scroll-snap-align:start;flex:none}
+.phone{--w:224px;width:var(--w);aspect-ratio:9/19;border-radius:34px;border:6px solid #141A22;background:#080D14;box-shadow:0 30px 60px -25px rgba(0,0,0,.9),inset 0 0 0 1px rgba(255,255,255,.06);position:relative;overflow:hidden;font-family:var(--font-body);color:#EAF2FA;font-size:10px;line-height:1.35;flex:none}
+.phone.sm{--w:186px}
+.tk-notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:34%;height:16px;border-radius:999px;background:#141A22;z-index:2}
+.tk-screen{position:absolute;inset:0;padding:30px 12px 54px;display:flex;flex-direction:column;gap:9px;overflow:hidden}
+.tk-top{display:flex;justify-content:space-between;align-items:center}
+.tk-top small{color:#8A9BB0;font-size:8.5px;display:block}
+.tk-top b{font-family:var(--font-display);font-size:13px;letter-spacing:-.02em}
+.tk-av{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#1265A3,#5EE6B0)}
+.tk-days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.tk-days span{padding:5px 0;border-radius:9px;background:#101823;font-size:8px;color:#8A9BB0}
+.tk-days span b{display:block;font-size:10px;color:#EAF2FA;font-family:var(--font-display)}
+.tk-days span.on{background:#1265A3;color:#D6ECFB}
+.tk-hero{display:flex;align-items:center;gap:10px;padding:10px;border-radius:14px;background:linear-gradient(135deg,#0B4C7E,#0A2E4C)}
+.tk-ringc{--p:66;width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;background:conic-gradient(#5EE6B0 calc(var(--p)*1%),rgba(255,255,255,.14) 0)}
+.tk-ringc span{width:36px;height:36px;border-radius:50%;background:#0A3557;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:10px}
+.tk-hero b{font-family:var(--font-display);font-size:11px;display:block}
+.tk-hero small{color:#B5D3EA;font-size:8.5px}
+.tk-h{font-family:var(--font-display);font-weight:700;font-size:10px;color:#8A9BB0;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.tk-item{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:11px;background:#101823;border:1px solid rgba(255,255,255,.05)}
+.tk-chk{width:15px;height:15px;border-radius:5px;border:1.5px solid #3A4B60;flex:none;display:grid;place-items:center}
+.tk-item.done .tk-chk{background:#5EE6B0;border-color:#5EE6B0}
+.tk-item.done .tk-chk::after{content:"";width:6px;height:3px;border-left:1.5px solid #06261A;border-bottom:1.5px solid #06261A;transform:rotate(-45deg) translate(1px,-1px)}
+.tk-item.done .tk-name{color:#8A9BB0;text-decoration:line-through}
+.tk-name{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tk-name small{display:block;color:#8A9BB0;font-size:8px;text-decoration:none}
+.tk-streak{font-family:var(--font-display);font-weight:700;font-size:8.5px;color:#FFC36B;background:rgba(255,195,107,.1);padding:2px 6px;border-radius:999px}
+.tk-goal{padding:9px 10px;border-radius:12px;background:#101823;border:1px solid rgba(255,255,255,.05);display:grid;gap:6px}
+.tk-goal .row{display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.tk-goal b{font-family:var(--font-display);font-size:10.5px}
+.tk-goal small{color:#8A9BB0;font-size:8px}
+.tk-bar{height:5px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.tk-bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#1265A3,#5EE6B0)}
+.tk-tag{font-size:7.5px;font-family:var(--font-display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7CC4F2}
+.tk-tl{display:grid;gap:6px;position:relative;padding-left:14px}
+.tk-tl::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1.5px;background:#1E2C3D}
+.tk-slot{position:relative;padding:7px 9px;border-radius:11px;background:#101823;display:flex;justify-content:space-between;gap:6px}
+.tk-slot::before{content:"";position:absolute;left:-13px;top:10px;width:8px;height:8px;border-radius:50%;background:#080D14;border:1.5px solid #3A4B60}
+.tk-slot.now{background:#0B4C7E}
+.tk-slot.now::before{border-color:#5EE6B0;background:#5EE6B0}
+.tk-slot.past{opacity:.55}
+.tk-slot b{font-family:var(--font-display);font-size:10px;display:block}
+.tk-slot small{color:#8A9BB0;font-size:8px}
+.tk-slot.now small{color:#B5D3EA}
+.tk-time{font-family:var(--font-display);font-weight:700;font-size:8.5px;color:#8A9BB0;white-space:nowrap}
+.tk-slot.now .tk-time{color:#D6ECFB}
+.tk-tabs{position:absolute;left:8px;right:8px;bottom:8px;height:38px;border-radius:14px;background:rgba(16,24,35,.92);border:1px solid rgba(255,255,255,.06);display:grid;grid-template-columns:repeat(4,1fr);align-items:center;text-align:center;font-size:7.5px;color:#6E8197;font-family:var(--font-display);font-weight:600}
+.tk-tabs span::before{content:"";display:block;width:12px;height:12px;margin:0 auto 2px;border-radius:4px;border:1.5px solid currentColor}
+.tk-tabs span.on{color:#5EE6B0}
+.figma-embed{width:100%;aspect-ratio:16/10;max-width:100%;border:1px solid var(--line);border-radius:var(--r-sm);background:#0A0F16}
+
+/* sector marquee */
+.marquee-wrap{padding-block:8px clamp(24px,4vw,40px)}
+.marquee-label{text-align:center;margin-bottom:14px}
+.marquee{position:relative;overflow:hidden;border-radius:999px;padding-block:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee ul{display:flex;list-style:none;margin:0;padding:0}
+.marquee li{display:flex;align-items:center;gap:12px;padding:0 34px;font-family:var(--font-display);font-weight:700;font-size:clamp(.95rem,.85rem + .5vw,1.2rem);letter-spacing:-.01em;white-space:nowrap;color:var(--ink)}
+.marquee li svg{width:26px;height:26px;color:var(--tide);flex:none}
+.marquee li::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--sea);margin-left:22px;box-shadow:0 0 10px var(--glow)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* portfolio: experience */
+.cv-layout{align-items:start}
+@media (min-width:980px){
+  .cv-layout .timeline-col{grid-column:1/span 7}
+  .cv-layout .side-col{grid-column:8/span 5}
+}
+.sub-h{font-size:var(--step-2);font-weight:700;letter-spacing:-.025em;margin-bottom:20px}
+.timeline{list-style:none;margin:0;padding:0 0 0 28px;position:relative;display:grid;gap:14px}
+.timeline::before{content:"";position:absolute;left:7px;top:12px;bottom:12px;width:1px;background:linear-gradient(var(--tide),rgba(18,101,163,.1))}
+.timeline li{position:relative}
+.timeline li::before{content:"";position:absolute;left:-26px;top:28px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--tide);box-shadow:0 0 12px var(--glow)}
+.xp{padding:20px 24px}
+.xp-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+.xp h4{font-size:var(--step-1);font-weight:700;letter-spacing:-.015em;line-height:1.3}
+.xp .dates{font-family:var(--font-display);font-weight:600;font-size:.78rem;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.xp .org{color:var(--tide);font-family:var(--font-display);font-weight:600;font-size:.86rem;margin-top:2px}
+.xp p{color:var(--ink-2);margin-top:8px;max-width:68ch;font-size:.95rem;line-height:1.65}
+.side-col{display:grid;gap:14px;margin-top:0}
+@media (min-width:980px){.side-col{margin-top:52px}}
+.side-card{padding:22px 24px;display:grid;gap:14px}
+.edu-degree{font-family:var(--font-display);font-weight:700;font-size:var(--step-1);line-height:1.3}
+.edu-meta{color:var(--ink-2);line-height:1.5;font-size:.95rem}
+.honours{display:inline-flex;justify-self:start;padding:4px 12px;border-radius:999px;border:1px solid rgba(124,196,242,.5);color:var(--tide);font-family:var(--font-display);font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
+.certs{list-style:none;margin:0;padding:0;display:grid}
+.certs li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;align-items:start;padding:12px 0;border-top:1px solid var(--line-soft)}
+.certs li:first-child{border-top:0;padding-top:0}
+.certs svg{width:22px;height:22px;color:var(--tide);margin-top:2px}
+.certs strong{display:block;font-family:var(--font-display);font-weight:700;font-size:.95rem;line-height:1.35}
+.certs span{color:var(--ink-2);font-size:.88rem;line-height:1.45}
+.side-card .btn{justify-self:start}
+
+/* portfolio: project segments, click to reveal */
+.projects-block{margin-top:clamp(48px,6vw,72px)}
+.seg-tiles{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:720px){.seg-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1080px){.seg-tiles{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.seg-tile{font:inherit;color:var(--ink);text-align:left;appearance:none;-webkit-appearance:none;margin:0;width:100%;cursor:pointer;display:flex;flex-direction:column;gap:10px;padding:20px;min-height:100%;transition:border-color .3s,transform .5s var(--ease),background .3s}
+.seg-tile:hover{border-color:rgba(124,196,242,.45);transform:translateY(-2px)}
+.seg-tile:focus-visible{outline:2px solid var(--tide);outline-offset:3px}
+.seg-tile[aria-expanded="true"]{border-color:var(--tide);background:linear-gradient(160deg,rgba(11,76,126,.32),rgba(255,255,255,.05) 70%);box-shadow:var(--hl-top),var(--shadow),0 0 40px -12px var(--glow)}
+.seg-tile .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.seg-tile .count{font-family:var(--font-display);font-weight:700;font-size:.74rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.seg-tile .chev{width:18px;height:18px;color:var(--ink-2);transition:transform .4s var(--ease),color .3s}
+.seg-tile[aria-expanded="true"] .chev{transform:rotate(180deg);color:var(--tide)}
+.seg-tile h4{font-size:1.02rem;font-weight:700;letter-spacing:-.015em;line-height:1.25}
+.seg-tile p{color:var(--ink-2);font-size:.86rem;line-height:1.5;display:none}
+@media (min-width:720px){.seg-tile p{display:block}}
+.seg-hint{color:var(--ink-2);font-size:.9rem;margin-top:14px}
+.seg-panel{margin-top:18px;padding:clamp(20px,3vw,32px)}
+.seg-panel.enter{animation:reveal .55s var(--ease)}
+@keyframes reveal{from{opacity:0;transform:translateY(12px)}}
+.seg-panel-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:start;gap:12px 24px;margin-bottom:20px}
+.seg-panel-head h3{font-size:var(--step-2);font-weight:700;letter-spacing:-.025em;line-height:1.15}
+.seg-panel-head p{color:var(--ink-2);max-width:68ch;margin-top:6px}
+.cards{display:grid;gap:14px}
+@media (min-width:720px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1060px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{display:flex;flex-direction:column;gap:14px;padding:22px;background:rgba(0,0,0,.25);border:1px solid var(--line-soft);border-radius:20px;position:relative;transition:transform .5s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-3px);border-color:rgba(124,196,242,.45)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:26px}
+.card .year{font-family:var(--font-display);font-weight:600;font-size:.78rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.card-open{all:unset;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:1.06rem;line-height:1.3;letter-spacing:-.015em;color:var(--ink)}
+.card-open::after{content:"";position:absolute;inset:0;border-radius:inherit;z-index:1}
+.card:has(.card-open:focus-visible){outline:2px solid var(--tide);outline-offset:3px}
+.card:hover .card-open{color:var(--tide)}
+.meta{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;margin:0;font-size:.88rem;line-height:1.45}
+.meta dt{font-family:var(--font-display);font-weight:600;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);padding-top:2px}
+.meta dd{margin:0}
+.did{color:var(--ink-2);font-size:.92rem;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.tool{padding:4px 10px;border-radius:999px;border:1px solid var(--line-soft);background:rgba(255,255,255,.04);font-family:var(--font-display);font-weight:600;font-size:.7rem;color:var(--ink-2)}
+.tool.ai{border-color:rgba(124,196,242,.45);color:var(--tide);background:rgba(11,76,126,.14)}
+.card-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;border-top:1px solid var(--line-soft)}
+.more{font-family:var(--font-display);font-weight:600;font-size:.78rem;color:var(--ink-2)}
+.card:hover .more{color:var(--tide)}
+.req{position:relative;z-index:2}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px 4px 8px;border-radius:999px;border:1px solid rgba(124,196,242,.55);background:rgba(11,76,126,.18);color:var(--tide);font-family:var(--font-display);font-weight:700;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase}
+.badge svg{width:12px;height:12px}
+.footnote{margin-top:18px;color:var(--ink-2);font-size:.86rem;max-width:80ch}
+
+/* modal */
+dialog.modal{width:min(720px,calc(100vw - 32px));max-height:min(86vh,880px);padding:0;color:var(--ink);background:linear-gradient(160deg,rgba(16,24,34,.88),rgba(6,9,14,.92));-webkit-backdrop-filter:blur(28px) saturate(160%);backdrop-filter:blur(28px) saturate(160%);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--hl-top),0 40px 120px -20px rgba(0,0,0,.9),0 0 80px -30px var(--glow);overflow:hidden}
+dialog.modal[open]{display:flex;flex-direction:column;animation:pop .45s var(--ease)}
+dialog.modal::backdrop{background:rgba(0,0,0,.6);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.modal-scroll{overflow-y:auto;padding:clamp(24px,4vw,40px)}
+.modal-close{position:absolute;top:16px;right:16px;z-index:3;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--ink);cursor:pointer}
+.modal-close:hover{border-color:var(--tide);color:var(--tide)}
+.modal-close svg{width:18px;height:18px}
+.modal h3{font-size:var(--step-2);font-weight:800;letter-spacing:-.03em;line-height:1.15;margin-top:14px;padding-right:44px}
+.modal .meta{margin-top:18px;padding:16px 18px;border-radius:var(--r-sm);background:rgba(255,255,255,.035);border:1px solid var(--line-soft)}
+.m-block{margin-top:22px}
+.m-block h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tide);font-weight:700;margin-bottom:8px}
+.m-block p{max-width:68ch}
+.m-block ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.m-block li::marker{color:var(--tide)}
+.m-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+/* proficiencies: icon circle */
+.prof-panel{padding:clamp(18px,3vw,36px)}
+.prof-layout{display:grid;gap:28px;align-items:center}
+@media (min-width:980px){.prof-layout{grid-template-columns:minmax(0,1fr) 280px}}
+.ring{--icon:clamp(36px,6.4vw,54px);position:relative;width:min(100%,560px);aspect-ratio:1/1;max-width:100%;margin-inline:auto}
+.ring-line{position:absolute;inset:6%;border-radius:50%;border:1px solid rgba(255,255,255,.1);pointer-events:none}
+.ring-line.inner{inset:23%;border-color:rgba(124,196,242,.16);border-style:dashed}
+.ring-core{position:absolute;inset:30%;border-radius:50%;background:radial-gradient(circle,rgba(11,76,126,.55) 0%,rgba(11,76,126,.2) 40%,rgba(11,76,126,0) 70%);filter:blur(16px);pointer-events:none}
+.ring-center{position:absolute;inset:33%;display:grid;place-content:center;text-align:center;gap:4px;padding:2px;pointer-events:none}
+.ring-center .big{font-family:var(--font-display);font-weight:800;font-size:clamp(.78rem,.55rem + 1.1vw,1.3rem);letter-spacing:-.025em;line-height:1.15;text-wrap:balance}
+.ring-center .cat{font-family:var(--font-display);font-weight:700;font-size:clamp(.6rem,.55rem + .25vw,.72rem);letter-spacing:.16em;text-transform:uppercase;color:var(--tide)}
+.ring-center .sub{color:var(--ink-2);font-size:clamp(.72rem,.68rem + .2vw,.85rem);line-height:1.4}
+.ico{position:absolute;width:var(--icon);height:var(--icon);transform:translate(-50%,-50%);display:grid;place-items:center;border-radius:50%;cursor:pointer;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:var(--hl-top);transition:transform .45s var(--ease),color .25s,background-color .25s,border-color .25s,box-shadow .35s,opacity .3s;padding:0}
+.ico svg{width:46%;height:46%}
+.ico.tool{width:calc(var(--icon)*.84);height:calc(var(--icon)*.84);border-radius:30%;background:rgba(18,101,163,.16);border-color:rgba(124,196,242,.28);color:var(--tide)}
+.ring-key{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-top:14px;color:var(--ink-2);font-size:.84rem}
+.ring-key span{display:inline-flex;align-items:center;gap:8px}
+.ring-key i{width:14px;height:14px;border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:50%}
+.ring-key i.sq{border-radius:4px;background:rgba(18,101,163,.25);border-color:rgba(124,196,242,.4)}
+.ico:hover,.ico:focus-visible,.ico.on{transform:translate(-50%,-50%) scale(1.22);color:#fff;background:var(--sea);border-color:rgba(255,255,255,.3);box-shadow:0 0 0 6px rgba(18,101,163,.18),0 0 30px var(--glow);z-index:2;outline:none}
+.ring.filtering .ico:not(.in-cat){opacity:.28}
+.ring.filtering .ico.in-cat{color:var(--tide);border-color:rgba(124,196,242,.6)}
+.legend{display:grid;gap:8px}
+@media (max-width:979px){.legend{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}.legend h3,.legend .hint{grid-column:1/-1}}
+.legend h3{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);font-weight:600;margin-bottom:4px}
+.legend button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:11px 16px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid var(--line-soft);color:var(--ink);font-family:var(--font-display);font-weight:600;font-size:.86rem;cursor:pointer;transition:border-color .25s,background-color .25s,color .25s;text-align:left}
+.legend button:hover,.legend button:focus-visible,.legend button[aria-pressed="true"]{border-color:var(--tide);color:var(--tide);background:rgba(11,76,126,.14)}
+.legend .count{font-variant-numeric:tabular-nums;color:var(--ink-2);font-weight:500}
+.legend .hint{color:var(--ink-2);font-size:.86rem;line-height:1.55;margin-top:4px}
+
+/* carousels on small screens keep the page short */
+.snap{display:grid;gap:14px}
+@media (max-width:759px){
+  .snap{grid-auto-flow:column;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+  .snap>*{scroll-snap-align:start}
+  .snap-hint{display:block!important}
+}
+.snap-hint{display:none;color:var(--ink-2);font-size:.82rem;margin-top:8px}
+
+/* AI workflow */
+.ai-grid{align-items:start}
+@media (min-width:980px){.ai-grid .ai-left{grid-column:1/span 5}.ai-grid .ai-right{grid-column:6/span 7}}
+.ai-copy{max-width:60ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.65;margin-top:16px}
+.steps{list-style:none;margin:0;padding:0}
+@media (min-width:760px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1180px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.step{padding:18px;display:grid;gap:8px;align-content:start}
+.step .num{font-family:var(--font-display);font-weight:700;font-size:.74rem;color:var(--tide);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+.step h3{font-size:1.05rem;font-weight:700;letter-spacing:-.015em}
+.step .row{display:grid;gap:1px}
+.step .row span{font-family:var(--font-display);font-weight:600;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+.step .row.ai span{color:var(--tide)}
+.step .row p{font-size:.86rem;line-height:1.5}
+.step .row+.row{padding-top:8px;border-top:1px solid var(--line-soft)}
+
+/* advisory */
+@media (min-width:760px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1140px){.services{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.service{padding:24px 22px;display:flex;flex-direction:column;gap:14px}
+.service .format{font-family:var(--font-display);font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tide)}
+.service h3{font-size:1.28rem;font-weight:800;letter-spacing:-.025em;line-height:1.2}
+.service p{color:var(--ink-2);font-size:.93rem;line-height:1.6}
+.suits{padding-top:12px;border-top:1px solid var(--line-soft)}
+.suits strong{display:block;font-family:var(--font-display);font-weight:600;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin-bottom:4px}
+.suits p{color:var(--ink)}
+.service-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:6px;flex-wrap:wrap}
+.price{font-family:var(--font-display);font-weight:700;font-size:.84rem}
+.price small{display:block;font-weight:600;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+.service.featured{background:linear-gradient(160deg,rgba(11,76,126,.3),rgba(255,255,255,.05) 60%)}
+
+/* contact */
+.contact-layout{align-items:start}
+@media (min-width:980px){
+  .contact-layout .form-col{grid-column:1/span 7}
+  .contact-layout .links-col{grid-column:8/span 5}
+}
+.form{padding:clamp(22px,3.4vw,34px);display:grid;gap:16px}
+.form-row{display:grid;gap:16px}
+@media (min-width:640px){.form-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.field{display:grid;gap:8px;min-width:0}
+.field label{font-family:var(--font-display);font-weight:600;font-size:.8rem}
+.field label .opt{color:var(--ink-2);font-weight:500}
+.field input,.field textarea,.field select{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:rgba(0,0,0,.35);border:1px solid var(--line);border-radius:14px;padding:12px 14px;transition:border-color .25s,box-shadow .25s}
+.field textarea{min-height:120px;resize:vertical;line-height:1.6}
+.field select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-2) 50%),linear-gradient(135deg,var(--ink-2) 50%,transparent 50%);background-position:calc(100% - 20px) 52%,calc(100% - 14px) 52%;background-size:6px 6px;background-repeat:no-repeat;padding-right:40px}
+.field select option{background:#111;color:var(--ink)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--tide);box-shadow:0 0 0 3px rgba(18,101,163,.3)}
+.field [aria-invalid="true"]{border-color:#FF9A9A}
+.err{font-size:.82rem;color:#FFB3B3}
+.form-status{padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-size:.95rem}
+.form-status.ok{border-color:rgba(124,196,242,.55);background:rgba(11,76,126,.16)}
+.form-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.form-actions small{color:var(--ink-2);font-size:.84rem}
+.links-card{padding:clamp(22px,3vw,28px);display:grid;gap:12px}
+.links-card .btn{width:100%}
+.link-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;border-radius:16px;border:1px solid var(--line-soft);background:rgba(255,255,255,.03);text-decoration:none;color:var(--ink);transition:border-color .25s,color .25s}
+a.link-row:hover{border-color:var(--tide);color:var(--tide)}
+.link-row .k{font-family:var(--font-display);font-weight:600;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);display:block}
+.link-row .v{font-family:var(--font-display);font-weight:600;font-size:.93rem;overflow-wrap:anywhere}
+.link-row svg{width:18px;height:18px;flex:none}
+.copy{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 12px;font-family:var(--font-display);font-weight:600;font-size:.74rem;cursor:pointer}
+.copy:hover{border-color:var(--tide);color:var(--tide)}
+
+footer{padding-block:32px 48px;border-top:1px solid var(--line-soft);margin-top:clamp(24px,4vw,48px)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;color:var(--ink-2);font-size:.88rem}
+.foot .logo{font-size:1.05rem;margin:0}
+
+/* reveal */
+.pre{opacity:0;transform:translateY(22px)}
+.reveal-in{transition:opacity 1s var(--ease),transform 1s var(--ease)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .blob{animation:none}
+  .marquee-track{animation:none;width:auto;justify-content:center}
+  .marquee ul+ul,.marquee-track>div{display:none!important}
+  .marquee ul{flex-wrap:wrap;justify-content:center;row-gap:12px}
+  .marquee{-webkit-mask-image:none;mask-image:none;border-radius:var(--r-md)}
+  .btn,.card,.ico,.seg-tile,.sheen::after{transition:none}
+  .card:hover,.btn-primary:hover,.seg-tile:hover{transform:none}
+  dialog.modal[open],.seg-panel.enter{animation:none}
+}
+</style>
+<style>html,body{margin:0} img{max-width:100%} [hidden]{display:none!important} :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <filter id="liquid" x="-3%" y="-3%" width="106%" height="106%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.010 0.018" numOctaves="2" seed="11" result="noise">
+      <animate id="liquidAnim" attributeName="baseFrequency" dur="22s" values="0.010 0.018;0.014 0.012;0.010 0.018" repeatCount="indefinite"/>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="ambient" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div></div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="page">
+  <header class="site-header">
+    <div class="wrap">
+      <div class="bar glass sheen" id="bar"></div>
+      <nav class="mobile-nav glass" id="mobileNav" aria-label="Mobile" hidden></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle"><div class="wrap" id="heroMount"></div></section>
+    <section class="marquee-wrap" aria-labelledby="sectorsTitle"><div class="wrap" id="sectorMount"></div></section>
+    <section class="section" id="portfolio" aria-labelledby="pfTitle"><div class="wrap" id="pfMount"></div></section>
+    <section class="section" id="proficiencies" aria-labelledby="profTitle"><div class="wrap" id="profMount"></div></section>
+    <section class="section" id="ai-workflow" aria-labelledby="aiTitle"><div class="wrap" id="aiMount"></div></section>
+    <section class="section" id="advisory" aria-labelledby="advTitle"><div class="wrap" id="advMount"></div></section>
+    <section class="section" id="contact" aria-labelledby="ctTitle"><div class="wrap" id="ctMount"></div></section>
+  </main>
+
+  <footer><div class="wrap foot" id="footMount"></div></footer>
+</div>
+
+<dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+  <button class="modal-close" type="button" id="modalClose" aria-label="Close project details">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="modal-scroll" id="modalBody"></div>
+</dialog>
+
+<noscript>
+  <div class="wrap" style="padding-block:40px">
+    <p>This is Ezra Anya, a product and brand designer and communications strategist. Please enable JavaScript to view the full portfolio.</p>
+  </div>
+</noscript>
+
+<script>
+/* =====================================================================
+   SITE DATA
+   Edit everything here. Layout code below reads from this object.
+   Wrap one word in *asterisks* inside a heading to colour it.
+   Icon names come from the ICONS list just below this object.
+   ===================================================================== */
+const SITE = {
+  brand: { prefix: "tea", suffix: "advisory", owner: "Ezra Anya" },
+
+  /* Your Calendly link. Every "Book a strategy session" button opens it. */
+  calendly: "https://calendly.com/your-handle/strategy-session",
+
+  nav: [
+    { label: "Portfolio", href: "#portfolio" },
+    { label: "Proficiencies", href: "#proficiencies" },
+    { label: "AI Workflow", href: "#ai-workflow" },
+    { label: "Advisory", href: "#advisory" },
+    { label: "Contact", href: "#contact" }
+  ],
+
+  primaryCta: "Book a strategy session",
+
+  hero: {
+    chip: "Open to advisory and retainer engagements.",
+    headline: "Brand, media and communications strategy for organisations that want to be *understood*.",
+    bio: [
+      "This is Ezra Anya, a product and brand designer and communications strategist. I work on the branding and communications team at a digital telecommunications company, where I lead brand strategy, design direction and messaging across digital products.",
+      "Beyond that role, I advise founders, institutions and personal brands on corporate communications, media and PR, and brand strategy. I build campaigns and video stories that carry those strategies to the public. I hold a first-class degree in Cybersecurity, which shapes how I think about systems, trust and clarity. I am also an author and public speaker, and AI sits inside my workflow from first research to final polish."
+    ],
+    /* Put your photo at photo/ezra.jpg (portrait, at least 900 x 1200). Until it exists, a monogram shows. */
+    photo: "photo/ezra.jpg",
+    photoAlt: "Portrait of Ezra Anya",
+    monogram: "EA",
+    facts: [
+      { label: "Advises on", value: "Corporate communications, media and PR, brand strategy" },
+      { label: "Builds", value: "Campaigns, brand systems, product experiences and brand films" }
+    ],
+    portfolioButton: "View portfolio"
+  },
+
+  sectors: {
+    label: "Institutions I have worked with",
+    items: [
+      { name: "Churches", icon: "church" },
+      { name: "Educational institutions", icon: "cap" },
+      { name: "Consulting firms", icon: "briefcase" },
+      { name: "Telecommunications", icon: "tower" },
+      { name: "Startup banks", icon: "bank" }
+    ]
+  },
+
+  portfolio: {
+    heading: "The *work* so far.",
+    lead: "Experience, education and the projects behind them.",
+    experienceHeading: "Experience",
+    experience: [
+      { role: "Corporate Communications Specialist", org: "Software and telecommunications company", dates: "2025 to date",
+        text: "Leads brand positioning, messaging and corporate identity across a portfolio of digital products. Writes product content and video scripts, reviews the company's digital presence, and trains the team on design tools." },
+      { role: "Brand and Content Lead", org: "People development consultancy", dates: "2025 to date",
+        text: "Leads brand strategy, content and digital communications. Built the company website, runs the weekly newsletter and social channels, and designs materials for its accountability programmes and corporate clients." },
+      { role: "Front End Engineer", org: "Digital studio", dates: "2020 to 2024",
+        text: "Built responsive websites and interfaces for client brands, turning design files into fast, accessible front-end code." }
+    ],
+    education: {
+      degree: "B.Tech Cybersecurity",
+      honours: "First Class Honours",
+      institution: "Federal University of Technology, Minna",
+      year: "2025",
+      note: "Vice Chancellor's Award for Academic and Leadership Excellence, four consecutive times."
+    },
+    certificationsHeading: "Certifications",
+    certifications: [
+      { name: "Google UX Design Certificate", issuer: "Google" },
+      { name: "AI and Media", issuer: "Saïd Business School, University of Oxford" }
+    ],
+    cv: { label: "Download CV", href: "cv/Ezra-Anya-CV.pdf" },
+    projectsHeading: "Selected projects",
+    projectsHint: "Choose a segment to see the projects in it.",
+    footnote: "Some engagements are under NDA. Names and figures are withheld or generalised. Detailed case studies are available on request."
+  },
+
+  segments: [
+    { id: "media", title: "Media and Communications", summary: "Messaging, content systems and media work that keep a voice consistent in public." },
+    { id: "product", title: "Product Design", summary: "Websites, interfaces and structured experiences that make products easy to use." },
+    { id: "visual", title: "Visual Design", summary: "Decks, documents and visual kits built to carry a message at a glance." },
+    { id: "branding", title: "Branding and Campaigns", summary: "Positioning, identity and campaigns that give a brand a clear place to stand." },
+    { id: "video", title: "Video Storytelling", summary: "Brand films and scripts taken from first idea to final export.",
+      intro: "I direct and produce brand films from first idea to final export. That covers concept development, scripting, on-location shooting, editing, colour and sound, and delivery formatted for each platform. Every film is built around a clear narrative so that each frame supports the message." }
+  ],
+
+  /* confidential: true shows the sector in place of the client, adds the badge
+     and a "Request details" button. `metric` is optional. */
+  projects: [
+    { id: "id-positioning", segment: "media", title: "Brand positioning for a digital identity product",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Corporate Communications Specialist", year: "2025",
+      did: "Built the positioning framework for a digital identity product, defined its core idea and set the messaging architecture used across every communications and marketing asset.",
+      scope: ["Positioning framework and core concept", "Messaging architecture by audience", "Message rules for marketing and communications assets"],
+      outcome: "One clear story for the product that every team writes from.",
+      metric: "Adoption figures available as ranges on request.", tools: ["Figma", "Microsoft Office"], ai: ["Claude"] },
+
+    { id: "consultancy-content", segment: "media", title: "Content and newsletter system for a consultancy",
+      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      did: "Runs a weekly email newsletter and the social channels of a people development consultancy, with long-form posts, reels and carousels written in one brand voice.",
+      scope: ["Weekly newsletter on Substack", "LinkedIn, Instagram and YouTube content", "Content calendar tied to brand pillars"],
+      outcome: "A steady publishing rhythm and a subscriber community that grows week on week.",
+      metric: "", tools: ["Substack", "Figma", "CapCut"], ai: ["Claude", "ChatGPT"] },
+
+    { id: "product-content", segment: "media", title: "Product content for three digital products",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Corporate Communications Specialist", year: "2026",
+      did: "Created the content strategy and assets for three digital products, including carousel narratives, vlog scripts and awareness content that makes a USSD service simple to use.",
+      scope: ["Content strategy for each product", "Carousel narratives and vlog scripts", "USSD awareness content"],
+      outcome: "Clearer product stories and simpler access for everyday users.",
+      metric: "Engagement figures available as ranges on request.", tools: ["Adobe Photoshop", "Figma"], ai: ["Claude"] },
+
+    /* ui: "tracka" draws the app screens on the card and in the modal.
+       figma: paste the Figma share link of the file or prototype. On the live site it shows an
+       "Open in Figma" button and an embedded, clickable prototype. */
+    { id: "tracka", segment: "product", title: "Tracka: goals, habits and routines app",
+      client: "Tracka", sector: "Productivity app", confidential: false, role: "Product and UI Designer", year: "2026",
+      ui: "tracka", figma: "",
+      did: "Designed the interface for Tracka, a mobile app that helps people set goals, build daily habits and run their routines in one place, with streaks and progress that keep them coming back.",
+      scope: ["User flows for goals, habits and routines", "Today screen with daily check-ins and streaks", "Goal tracking with progress milestones", "Routine timeline with time blocks", "Component library and dark interface in Figma"],
+      outcome: "A calm, focused interface where a user sees what matters today in one glance and logs progress in a single tap.",
+      metric: "", tools: ["Figma"], ai: ["Claude"] },
+
+    { id: "client-websites", segment: "product", title: "Responsive websites for client brands",
+      client: "Digital studio", sector: "Web design and development", confidential: false, role: "Front End Engineer", year: "2020 to 2024",
+      did: "Turned Figma designs into responsive, accessible websites for client brands across a multi-year engagement, and plugged in content systems, APIs and interactive components.",
+      scope: ["Figma to front-end builds", "Responsive layouts for desktop and mobile", "Performance and accessibility work", "CMS and API integrations"],
+      outcome: "Fast, consistent client websites delivered on schedule.",
+      metric: "", tools: ["Figma", "HTML, CSS, JavaScript"], ai: [] },
+
+    { id: "website-audit", segment: "product", title: "Corporate website audit",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Corporate Communications Specialist", year: "2026",
+      did: "Audited a corporate website and delivered recommendations on visual storytelling, UX structure and the credibility of the interface.",
+      scope: ["Page-by-page audit", "UX structure review", "Recommendations report"],
+      outcome: "A prioritised plan the company can follow to make its website clearer and more credible.",
+      metric: "", tools: ["Figma", "Microsoft Office"], ai: ["Claude"] },
+
+    { id: "proposal-decks", segment: "visual", title: "Proposals and decks for institutional clients",
+      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      did: "Produced a corporate services proposal, lecture briefs, event materials and presentation decks for institutional and organisational clients.",
+      scope: ["Corporate services proposal", "Presentation decks", "Lecture briefs and event materials"],
+      outcome: "A consistent, professional look in every document a client receives.",
+      metric: "", tools: ["Microsoft PowerPoint", "Figma"], ai: ["Claude"] },
+
+    { id: "design-kit", segment: "visual", title: "Design training kit for an in-house team",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Facilitator and Designer", year: "2026",
+      did: "Designed and taught a 90-minute session on Figma and Photoshop basics, with a lecture note, a Figma template specification and a design reference sheet.",
+      scope: ["90-minute training session", "Lecture note", "Figma template specification", "Design reference cheat sheet"],
+      outcome: "A team able to produce simple, on-brand visuals without waiting on a designer.",
+      metric: "", tools: ["Figma", "Adobe Photoshop"], ai: ["Claude"] },
+
+    { id: "social-visuals", segment: "visual", title: "Social and newsletter visuals",
+      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      did: "Designs carousels, newsletter headers and post graphics in a shared visual system so every channel looks like one brand.",
+      scope: ["Carousel templates", "Newsletter header artwork", "Post graphics"],
+      outcome: "A recognisable look across LinkedIn, Instagram, YouTube and email.",
+      metric: "", tools: ["Figma", "Adobe Photoshop"], ai: ["ChatGPT"] },
+
+    { id: "corporate-identity", segment: "branding", title: "Corporate identity strategy",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Corporate Communications Specialist", year: "2025",
+      did: "Directed the corporate identity strategy that positions the company as a credible authority in software development and telecommunications.",
+      scope: ["Identity strategy", "Brand voice and tone", "Rollout across corporate channels"],
+      outcome: "A company that presents itself with one voice to partners, regulators and customers.",
+      metric: "", tools: ["Figma", "Microsoft Office"], ai: ["Claude"] },
+
+    { id: "consultancy-brand", segment: "branding", title: "Brand ecosystem for a consultancy and its programmes",
+      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      did: "Leads the brand strategy for a consultancy and the structured programmes it runs, from positioning and voice to how each programme sits under the main brand.",
+      scope: ["Brand positioning and voice", "Programme brand architecture", "Content pillars"],
+      outcome: "A brand family where the consultancy and its programmes point to each other.",
+      metric: "", tools: ["Figma", "Notion"], ai: ["Claude", "ChatGPT"] },
+
+    { id: "culture-event", segment: "branding", title: "Internal culture event",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Planner and Facilitator", year: "2026",
+      did: "Planned and ran an internal staff trivia competition to strengthen team spirit and company culture.",
+      scope: ["Event concept and format", "Internal promotion", "Live facilitation"],
+      outcome: "Stronger team cohesion across departments.",
+      metric: "", tools: ["Canva", "Microsoft Office"], ai: ["ChatGPT"] },
+
+    { id: "product-videos", segment: "video", title: "Product video scripts",
+      client: "", sector: "Software and telecommunications", confidential: true, role: "Scriptwriter", year: "2026",
+      did: "Wrote product video and vlog scripts that show what each product does and why it matters to the user.",
+      scope: ["Product video scripts", "Vlog scripts", "Shot notes for production"],
+      outcome: "Product videos with one clear message each.",
+      metric: "", tools: ["Adobe Premiere Pro"], ai: ["Claude"] },
+
+    { id: "consultancy-video", segment: "video", title: "Reels and long-form video for a consultancy",
+      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      did: "Produces reels and YouTube content, from script to edit, with descriptions written for each platform.",
+      scope: ["Reels and short-form cuts", "Long-form YouTube edits", "Video descriptions"],
+      outcome: "Video that carries the consultancy's ideas to new audiences each week.",
+      metric: "", tools: ["Adobe Premiere Pro", "CapCut", "Adobe After Effects"], ai: ["Descript"] },
+
+    { id: "explainer", segment: "video", title: "Product explainer",
+      client: "[Client or sector]", sector: "Technology", confidential: false, role: "Scriptwriter and Editor", year: "[Year]",
+      did: "Wrote and produced a short explainer that shows what a product does and why it matters, cut for each platform.",
+      scope: ["Script and storyboard", "Screen recordings and motion graphics", "Platform cuts"],
+      outcome: "One explainer the client uses across onboarding, sales and social.",
+      metric: "", tools: ["Adobe After Effects", "Adobe Premiere Pro"], ai: ["Claude"] }
+  ],
+
+  proficiencies: {
+    heading: "Proficiencies",
+    lead: "Skills sit on the outer ring and the tools I use sit on the inner ring. Hover or tap an icon to see its name.",
+    tools: [
+      { name: "Google Workspace", icon: "gws" },
+      { name: "Photoshop", icon: "ps" },
+      { name: "Illustrator", icon: "vector" },
+      { name: "Premiere Pro", icon: "pr" },
+      { name: "After Effects", icon: "ae" },
+      { name: "CapCut", icon: "cut" },
+      { name: "Claude", icon: "claude" },
+      { name: "ChatGPT", icon: "chat" },
+      { name: "Higgsfield", icon: "higgs" },
+      { name: "Figma", icon: "frame" },
+      { name: "Prompt Engineering", icon: "prompt" }
+    ],
+    skills: [
+      { name: "Corporate Communications", category: "Communications", icon: "building" },
+      { name: "Media and PR", category: "Communications", icon: "megaphone" },
+      { name: "Messaging Architecture", category: "Communications", icon: "layers" },
+      { name: "Content Strategy", category: "Communications", icon: "calendar" },
+      { name: "Copywriting", category: "Communications", icon: "pen" },
+      { name: "Newsletter Writing", category: "Communications", icon: "mail" },
+      { name: "Social Media Management", category: "Communications", icon: "share" },
+      { name: "Community Management", category: "Communications", icon: "users" },
+      { name: "Public Speaking", category: "Communications", icon: "mic" },
+      { name: "Brand Strategy", category: "Branding", icon: "target" },
+      { name: "Brand Identity", category: "Branding", icon: "gem" },
+      { name: "Campaign Strategy", category: "Branding", icon: "rocket" },
+      { name: "Product Design", category: "Design", icon: "phone" },
+      { name: "UI and UX", category: "Design", icon: "layout" },
+      { name: "Visual Design", category: "Design", icon: "nib" },
+      { name: "Design Systems", category: "Design", icon: "blocks" },
+      { name: "Presentation Design", category: "Design", icon: "board" },
+      { name: "Front-end Development", category: "Engineering", icon: "code" },
+      { name: "Video Storytelling", category: "Video", icon: "clapper" },
+      { name: "Scriptwriting", category: "Video", icon: "script" },
+      { name: "Video Editing", category: "Video", icon: "timeline" },
+      { name: "AI-Augmented Workflows", category: "AI", icon: "sparkle" },
+      { name: "AI-Assisted Research", category: "AI", icon: "search" },
+      { name: "Workshop Facilitation", category: "Advisory", icon: "chalk" }
+    ]
+  },
+
+  ai: {
+    heading: "*AI* is part of how I work.",
+    copy: "I use AI to speed up research, pressure-test messaging, draft and iterate copy, structure strategy documents, and prototype visuals and video concepts. Judgment, taste and accountability stay with me. Clients get faster turnaround and a wider range of options before anything reaches them.",
+    steps: [
+      { name: "Brief", ai: "Turns call notes into a first draft of the brief.", human: "I confirm the real problem and what success looks like." },
+      { name: "Research", ai: "Scans markets, competitors and coverage at speed.", human: "I decide which sources hold up and what matters." },
+      { name: "Ideate", ai: "Widens the field with more angles and concepts.", human: "I choose the ideas that fit the brand and the moment." },
+      { name: "Draft", ai: "Produces first drafts of copy, scripts and structure.", human: "I rewrite for voice, nuance and local context." },
+      { name: "Refine", ai: "Tests messages against audiences and likely objections.", human: "I make the final calls on tone and risk." },
+      { name: "Deliver", ai: "Formats assets for each platform and channel.", human: "I sign off every piece and own the result." }
+    ]
+  },
+
+  advisory: {
+    heading: "Work with *teaadvisory*.",
+    lead: "Four ways to work together. Each one starts with a conversation about what you need.",
+    pricingLabel: "Pricing",
+    pricing: "On request",
+    services: [
+      { name: "Strategy Session", format: "One-off, 60 to 90 minutes", booking: true,
+        description: "One focused session on a single communications, brand or media question. You leave with clear next steps in writing.",
+        suits: "Founders and leaders who need a sharp outside view before a decision." },
+      { name: "Project Engagement", format: "Defined scope",
+        description: "A fixed scope with a clear end point, such as a brand strategy, a campaign or a communications plan.",
+        suits: "Organisations with a launch, rebrand or campaign on the calendar." },
+      { name: "Monthly Retainer", format: "Ongoing", featured: true,
+        description: "Ongoing advisory and oversight of your communications, with a monthly review of what worked and what comes next.",
+        suits: "Teams that want a senior communications partner without a full-time hire." },
+      { name: "Workshop and Speaking", format: "Training and talks",
+        description: "Training for your team on communications, branding and design, or a talk for your event.",
+        suits: "Companies, institutions and conferences building in-house capability." }
+    ]
+  },
+
+  contact: {
+    heading: "Start a *conversation*.",
+    lead: "Tell me what you are working on. I reply within two working days.",
+    /* Paste a Formspree (or similar) endpoint here to receive submissions. */
+    formEndpoint: "",
+    email: "ezraanya14@gmail.com",
+    whatsapp: { display: "+234 701 295 4115", link: "https://wa.me/2347012954115" },
+    linkedin: { display: "linkedin.com/in/theezraanya", link: "https://www.linkedin.com/in/theezraanya/" },
+    instagram: { display: "@your-handle", link: "https://www.instagram.com/" },
+    budgets: ["Prefer not to say", "Under ₦500,000", "₦500,000 to ₦2,000,000", "₦2,000,000 to ₦5,000,000", "Above ₦5,000,000", "International budget (USD)"]
+  },
+
+  footer: { owner: "Ezra Anya" }
+};
+
+/* ICONS: 24 x 24 line icons. Use these names in the data above. */
+const ICONS = {
+  church: '<path d="M12 2v4M10 4h4M6 21V11l6-5 6 5v10M3 21h18M10 21v-4a2 2 0 0 1 4 0v4"/>',
+  cap: '<path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v5"/>',
+  briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+  tower: '<circle cx="12" cy="8" r="2"/><path d="M12 10v11M8 21h8M12 10l-4 11M12 10l4 11M7.5 3.5a7 7 0 0 0 0 9M16.5 3.5a7 7 0 0 1 0 9"/>',
+  bank: '<path d="M3 9l9-6 9 6M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 21h18"/>',
+  building: '<path d="M4 21V5l8-3v19M12 9h8v12M3 21h18M7 8h2M7 12h2M7 16h2M15 13h2M15 17h2"/>',
+  megaphone: '<path d="M3 10v4h3l7 4V6l-7 4H3zM16 9a3 3 0 0 1 0 6M18.5 6.5a7 7 0 0 1 0 11"/>',
+  layers: '<path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M7 14h3M7 17h6"/>',
+  pen: '<path d="M4 20l4-1 11-11-3-3L5 16l-1 4zM14 6l3 3"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  share: '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
+  users: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.3 0 4 1.5 4.5 4"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
+  gem: '<path d="M6 3h12l3 6-9 12L3 9zM3 9h18M10 3L8 9l4 12 4-12-2-6"/>',
+  rocket: '<path d="M5 15c-1.5 1.5-2 4-2 6 2 0 4.5-.5 6-2M9 15l-3-3c2-6 7-9 15-9 0 8-3 13-9 15l-3-3z"/><circle cx="15" cy="9" r="1.5"/>',
+  phone: '<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/>',
+  layout: '<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 8v10M14 12l5 2-2 1-1 2z"/>',
+  nib: '<path d="M12 3l6 8-6 10-6-10 6-8zM12 3v8"/><circle cx="12" cy="13" r="2"/>',
+  blocks: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><circle cx="17.5" cy="17.5" r="3.5"/>',
+  board: '<path d="M3 4h18M5 4v11h14V4M12 15v4M8 21l4-2 4 2M8 11l3-3 2 2 3-3"/>',
+  code: '<path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>',
+  clapper: '<rect x="3" y="9" width="18" height="12" rx="2"/><path d="M3 9l1.5-5H21l-1.5 5M9 4L7.5 9M15 4l-1.5 5"/>',
+  script: '<path d="M6 2h9l4 4v16H6zM15 2v4h4M9 11h7M9 15h7M9 19h4"/>',
+  timeline: '<rect x="3" y="4" width="10" height="4" rx="1"/><rect x="9" y="10" width="12" height="4" rx="1"/><rect x="5" y="16" width="9" height="4" rx="1"/><path d="M16 2v20"/>',
+  sparkle: '<path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8zM19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8z"/>',
+  search: '<circle cx="10" cy="10" r="7"/><path d="M21 21l-6-6M10 6.5l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/>',
+  chalk: '<rect x="3" y="3" width="18" height="12" rx="1.5"/><path d="M7 21l3-6M17 21l-3-6M7 8h6M7 11h4"/>',
+  gws: '<rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><path d="M14 15h6M14 18h4"/>',
+  ps: '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="9.5" r="1.8"/><path d="M3 17l5-5 4 4 3-3 6 6"/>',
+  vector: '<path d="M5 19C8 9 16 15 19 5"/><rect x="3" y="17" width="4" height="4" rx=".5"/><rect x="17" y="3" width="4" height="4" rx=".5"/><path d="M5 19l4-9M19 5l-4 9"/><circle cx="9" cy="10" r="1.2"/><circle cx="15" cy="14" r="1.2"/>',
+  pr: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 5v14M17 5v14M3 9h4M3 15h4M17 9h4M17 15h4M10.5 9.5l4 2.5-4 2.5z"/>',
+  ae: '<path d="M3 18c4 0 5-12 9-12s5 12 9 12"/><path d="M12 3l2 3-2 3-2-3zM4 15.5l1.5 2.5L4 20.5 2.5 18zM20 15.5l1.5 2.5-1.5 2.5-1.5-2.5z"/>',
+  cut: '<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M8.2 15L18 4M15.8 15L6 4"/>',
+  claude: '<path d="M4 5h16v11H9l-5 4z"/><path d="M12 7.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/>',
+  chat: '<path d="M3 5h12v8H8l-5 3.5z"/><path d="M15 9h6v8l-3-2h-7v-2"/>',
+  higgs: '<rect x="2" y="8" width="13" height="11" rx="2"/><path d="M15 12l5-3v9l-5-3M19 1.8l.7 1.5 1.5.7-1.5.7-.7 1.5-.7-1.5-1.5-.7 1.5-.7z"/>',
+  frame: '<path d="M7 3v18M17 3v18M3 7h18M3 17h18"/>',
+  prompt: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 10l3 2-3 2M12 15h5"/>',
+  award: '<circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  down: '<path d="M12 5v14M6 13l6 6 6-6"/>',
+  chev: '<path d="M6 9l6 6 6-6"/>',
+  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  close: '<path d="M6 6l12 12M18 6L6 18"/>',
+  ext: '<path d="M7 17L17 7M9 7h8v8"/>',
+  cal: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/>'
+};
+
+/* =====================================================================
+   LAYOUT CODE. No copy below this line.
+   ===================================================================== */
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const esc = (s = "") => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const hl = s => esc(s).replace(/\*(.+?)\*/g, '<em class="hl">$1</em>');
+  const icon = (name, sw = 1.7) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ICONS.sparkle}</svg>`;
+  const WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>';
+  const reduceMQ = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const bookBtn = (cls = "btn btn-primary", label = SITE.primaryCta, withIcon = true) =>
+    `<a class="${cls}" href="${esc(SITE.calendly)}" target="_blank" rel="noopener">${esc(label)}${withIcon ? " " + icon("arrow", 2) : ""}</a>`;
+  const logoHTML = `<a class="logo" href="#top" aria-label="${esc(SITE.brand.prefix + SITE.brand.suffix)} home"><span>${esc(SITE.brand.prefix)}</span>${esc(SITE.brand.suffix)}</a>`;
+
+  /* ---------- header ---------- */
+  $("#bar").innerHTML = `
+    ${logoHTML}
+    <nav class="nav" aria-label="Primary">${SITE.nav.map(n => `<a href="${esc(n.href)}">${esc(n.label)}</a>`).join("")}</nav>
+    ${bookBtn("btn btn-primary btn-sm", SITE.primaryCta, false)}
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">${icon("menu", 2)}</button>`;
+  const mobileNav = $("#mobileNav"), menuBtn = $("#menuBtn");
+  mobileNav.innerHTML = SITE.nav.map(n => `<a href="${esc(n.href)}">${esc(n.label)}</a>`).join("") + bookBtn("btn btn-primary", SITE.primaryCta, false);
+  const setMenu = open => {
+    mobileNav.hidden = !open;
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    menuBtn.innerHTML = icon(open ? "close" : "menu", 2);
+  };
+  menuBtn.addEventListener("click", () => setMenu(mobileNav.hidden));
+  mobileNav.addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !mobileNav.hidden) { setMenu(false); menuBtn.focus(); } });
+
+  /* ---------- hero ---------- */
+  const H = SITE.hero;
+  $("#heroMount").innerHTML = `
+    <p class="chip glass"><span class="dot" aria-hidden="true"></span>${esc(H.chip)}</p>
+    <h1 id="heroTitle">${hl(H.headline)}</h1>
+    <div class="grid12 hero-body">
+      <div class="bio glass lg liquid sheen">
+        ${H.bio.map(p => `<p>${esc(p)}</p>`).join("")}
+        <div class="hero-actions">
+          <a class="btn btn-ghost" href="#portfolio">${esc(H.portfolioButton)} ${icon("down", 2)}</a>
+          ${bookBtn()}
+        </div>
+      </div>
+      <figure class="portrait glass lg" style="margin:0">
+        <div class="fallback" aria-hidden="true"><span>${esc(H.monogram)}</span></div>
+        ${H.photo ? `<img src="${esc(H.photo)}" alt="${esc(H.photoAlt)}" loading="eager" onerror="this.remove()">` : ""}
+        <dl class="floats">
+          ${H.facts.map(f => `<div class="float"><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`).join("")}
+        </dl>
+      </figure>
+    </div>`;
+
+  /* ---------- Tracka app screens ---------- */
+  const tkTabs = on => `<div class="tk-tabs">${["Today", "Goals", "Routines", "Stats"].map(t => `<span${t === on ? ' class="on"' : ""}>${t}</span>`).join("")}</div>`;
+  const tkHabit = (name, sub, streak, done) => `<div class="tk-item${done ? " done" : ""}"><span class="tk-chk"></span><span class="tk-name">${name}<small>${sub}</small></span><span class="tk-streak">${streak} day</span></div>`;
+  const TRACKA = {
+    today: `<div class="tk-screen">
+      <div class="tk-top"><div><small>Tuesday, 13 October</small><b>Good morning, Ada</b></div><span class="tk-av"></span></div>
+      <div class="tk-days">${[["M", 12], ["T", 13], ["W", 14], ["T", 15], ["F", 16], ["S", 17], ["S", 18]].map((d, i) => `<span${i === 1 ? ' class="on"' : ""}>${d[0]}<b>${d[1]}</b></span>`).join("")}</div>
+      <div class="tk-hero"><div class="tk-ringc" style="--p:66"><span>4/6</span></div><div><b>4 of 6 habits done</b><small>Two more to keep your streak alive</small></div></div>
+      <p class="tk-h">Today's habits</p>
+      ${tkHabit("Morning devotion", "6:00 am", 21, true)}
+      ${tkHabit("Drink 2 litres of water", "All day", 9, true)}
+      ${tkHabit("Workout, 30 minutes", "7:00 am", 14, true)}
+      ${tkHabit("Read 20 pages", "Evening", 6, false)}
+      ${tkHabit("Journal", "9:30 pm", 3, false)}
+    </div>${tkTabs("Today")}`,
+    goals: `<div class="tk-screen">
+      <div class="tk-top"><div><small>Q4 2026</small><b>My goals</b></div><span class="tk-av"></span></div>
+      ${[["Run a 10K", "Health", 62, "6.2 of 10 km"], ["Save ₦500,000", "Finance", 40, "₦200,000 saved"], ["Read 12 books", "Growth", 58, "7 of 12 books"], ["Launch my portfolio", "Career", 85, "Final review"]]
+        .map(g => `<div class="tk-goal"><span class="tk-tag">${g[1]}</span><div class="row"><b>${g[0]}</b><small>${g[2]}%</small></div><div class="tk-bar"><i style="width:${g[2]}%"></i></div><small>${g[3]}</small></div>`).join("")}
+    </div>${tkTabs("Goals")}`,
+    routine: `<div class="tk-screen">
+      <div class="tk-top"><div><small>Weekday routine</small><b>Morning flow</b></div><span class="tk-av"></span></div>
+      <div class="tk-tl">
+        ${[["Wake and hydrate", "5:45", "5 min", "past"], ["Devotion and prayer", "6:00", "30 min", "past"], ["Workout", "6:30", "30 min", "now"], ["Shower and dress", "7:00", "20 min", ""], ["Plan the day", "7:20", "10 min", ""], ["Deep work block", "8:00", "2 hours", ""]]
+          .map(r => `<div class="tk-slot ${r[3]}"><div><b>${r[0]}</b><small>${r[2]}</small></div><span class="tk-time">${r[1]}</span></div>`).join("")}
+      </div>
+    </div>${tkTabs("Routines")}`
+  };
+  const phone = (screen, cls = "") => `<div class="phone ${cls}" aria-hidden="true"><span class="tk-notch"></span>${TRACKA[screen]}</div>`;
+  const figmaEmbed = url => `https://www.figma.com/embed?embed_host=share&url=${encodeURIComponent(url)}`;
+
+  /* ---------- sector marquee ---------- */
+  const S = SITE.sectors;
+  const sectorList = hidden => `<ul${hidden ? ' aria-hidden="true"' : ""}>${S.items.map(i => `<li>${icon(i.icon, 1.6)}${esc(i.name)}</li>`).join("")}</ul>`;
+  /* repeat the list so the strip stays full on wide screens, then double it for the loop */
+  const reps = Math.max(2, Math.ceil(10 / S.items.length));
+  const half = Array.from({ length: reps }, (_, k) => sectorList(k > 0)).join("");
+  $("#sectorMount").innerHTML = `
+    <p class="label-sm marquee-label" id="sectorsTitle">${esc(S.label)}</p>
+    <div class="marquee glass"><div class="marquee-track">${half}<div style="display:flex" aria-hidden="true">${half.replace(/<ul>/g, '<ul aria-hidden="true">')}</div></div></div>`;
+
+  /* ---------- portfolio ---------- */
+  const P = SITE.portfolio;
+  const segProjects = id => SITE.projects.filter(p => p.segment === id);
+  const clientLabel = p => (p.confidential ? p.sector : (p.client || p.sector));
+  const card = p => `
+    <article class="card">
+      ${p.ui === "tracka" ? `<div class="ui-thumb">${phone("today", "sm")}</div>` : ""}
+      <div class="card-top">
+        ${p.confidential ? `<span class="badge">${icon("lock", 2.4)}Confidential</span>` : `<span class="label-sm">${esc(p.sector)}</span>`}
+        <span class="year">${esc(p.year)}</span>
+      </div>
+      <h4 style="margin:0"><button class="card-open" type="button" data-project="${esc(p.id)}" aria-haspopup="dialog">${esc(p.title)}</button></h4>
+      <dl class="meta">
+        <dt>${p.confidential ? "Sector" : "Client"}</dt><dd>${esc(clientLabel(p))}</dd>
+        <dt>Role</dt><dd>${esc(p.role)}</dd>
+      </dl>
+      <p class="did">${esc(p.did)}</p>
+      <div class="tools">
+        ${p.tools.map(t => `<span class="tool">${esc(t)}</span>`).join("")}
+        ${p.ai.map(t => `<span class="tool ai" title="AI tool">${esc(t)}</span>`).join("")}
+      </div>
+      <div class="card-foot">
+        <span class="more" aria-hidden="true">Open project</span>
+        ${p.confidential ? `<button class="btn btn-ghost btn-sm req" type="button" data-request="${esc(p.title)}">Request details</button>` : ""}
+      </div>
+    </article>`;
+
+  $("#pfMount").innerHTML = `
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Portfolio and CV</p>
+      <h2 class="h2" id="pfTitle">${hl(P.heading)}</h2>
+      <p class="lead">${esc(P.lead)}</p>
+    </div>
+    <div class="grid12 cv-layout">
+      <div class="timeline-col">
+        <h3 class="sub-h">${esc(P.experienceHeading)}</h3>
+        <ol class="timeline">
+          ${P.experience.map(x => `<li data-reveal><article class="xp glass sheen">
+            <div class="xp-top"><h4>${esc(x.role)}</h4><span class="dates">${esc(x.dates)}</span></div>
+            <p class="org">${esc(x.org)}</p>
+            <p>${esc(x.text)}</p>
+          </article></li>`).join("")}
+        </ol>
+      </div>
+      <aside class="side-col" aria-label="Education and certifications">
+        <div class="side-card glass liquid sheen" data-reveal>
+          <p class="label-sm">Education</p>
+          <span class="honours">${esc(P.education.honours)}</span>
+          <div>
+            <p class="edu-degree">${esc(P.education.degree)}</p>
+            <p class="edu-meta">${esc(P.education.institution)}, ${esc(P.education.year)}</p>
+            ${P.education.note ? `<p class="edu-meta" style="margin-top:8px">${esc(P.education.note)}</p>` : ""}
+          </div>
+        </div>
+        <div class="side-card glass sheen" data-reveal>
+          <p class="label-sm">${esc(P.certificationsHeading)}</p>
+          <ul class="certs">${P.certifications.map(c => `<li>${icon("award", 1.7)}<div><strong>${esc(c.name)}</strong><span>${esc(c.issuer)}</span></div></li>`).join("")}</ul>
+          <a class="btn btn-primary" href="${esc(P.cv.href)}" download>${esc(P.cv.label)} ${icon("down", 2)}</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="projects-block" id="projects">
+      <div class="section-head" style="margin-bottom:20px" data-reveal>
+        <p class="eyebrow">${SITE.projects.length} projects in ${SITE.segments.length} segments</p>
+        <h3 class="h2" style="font-size:var(--step-3)">${esc(P.projectsHeading)}</h3>
+      </div>
+      <div class="seg-tiles" role="group" aria-label="Project segments" data-reveal>
+        ${SITE.segments.map(s => `<button class="seg-tile glass sheen" type="button" id="tile-${esc(s.id)}" data-seg="${esc(s.id)}" aria-expanded="false" aria-controls="segPanel">
+          <span class="top"><span class="count">${segProjects(s.id).length} projects</span>${icon("chev", 2).replace("<svg ", '<svg class="chev" ')}</span>
+          <h4>${esc(s.title)}</h4>
+          <p>${esc(s.summary)}</p>
+        </button>`).join("")}
+      </div>
+      <p class="seg-hint" id="segHint">${esc(P.projectsHint)}</p>
+      <div class="seg-panel glass lg" id="segPanel" role="region" aria-live="polite" hidden></div>
+      <p class="footnote">${esc(P.footnote)}</p>
+    </div>`;
+
+  const segPanel = $("#segPanel"), segHint = $("#segHint");
+  let openSeg = null;
+  const showSegment = (id, focusPanel) => {
+    $$(".seg-tile").forEach(t => t.setAttribute("aria-expanded", String(t.dataset.seg === id)));
+    if (!id) { segPanel.hidden = true; segHint.hidden = false; openSeg = null; return; }
+    const s = SITE.segments.find(x => x.id === id);
+    openSeg = id;
+    segPanel.setAttribute("aria-labelledby", "segPanelTitle");
+    segPanel.innerHTML = `
+      <div class="seg-panel-head">
+        <div><h3 id="segPanelTitle" tabindex="-1">${esc(s.title)}</h3><p>${esc(s.intro || s.summary)}</p></div>
+        <button class="btn btn-ghost btn-sm" type="button" data-close-seg>Close ${icon("close", 2)}</button>
+      </div>
+      <div class="cards">${segProjects(id).map(card).join("")}</div>`;
+    segPanel.hidden = false; segHint.hidden = true;
+    segPanel.classList.remove("enter"); void segPanel.offsetWidth; segPanel.classList.add("enter");
+    if (focusPanel) {
+      const r = segPanel.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.7 || r.top < 0) segPanel.scrollIntoView({ behavior: reduceMQ.matches ? "auto" : "smooth", block: "start" });
+    }
+  };
+  $$(".seg-tile").forEach(t => t.addEventListener("click", () => showSegment(openSeg === t.dataset.seg ? null : t.dataset.seg, true)));
+  segPanel.addEventListener("click", e => {
+    if (e.target.closest("[data-close-seg]")) { const id = openSeg; showSegment(null); $("#tile-" + id).focus(); }
+  });
+  const fromHash = () => { const m = location.hash.match(/^#seg-([a-z]+)$/); if (m && SITE.segments.some(s => s.id === m[1])) { showSegment(m[1], true); } };
+  fromHash(); window.addEventListener("hashchange", fromHash);
+
+  /* ---------- modal ---------- */
+  const modal = $("#projectModal"), modalBody = $("#modalBody");
+  let lastOpener = null;
+  const openProject = (p, opener) => {
+    lastOpener = opener || document.activeElement;
+    const seg = SITE.segments.find(s => s.id === p.segment);
+    modalBody.innerHTML = `
+      <div class="card-top" style="justify-content:flex-start;gap:10px;flex-wrap:wrap">
+        <span class="label-sm">${esc(seg ? seg.title : "")}</span>
+        ${p.confidential ? `<span class="badge">${icon("lock", 2.4)}Confidential</span>` : ""}
+      </div>
+      <h3 id="modalTitle">${esc(p.title)}</h3>
+      <dl class="meta">
+        <dt>${p.confidential ? "Sector" : "Client"}</dt><dd>${esc(clientLabel(p))}</dd>
+        ${!p.confidential && p.client ? `<dt>Sector</dt><dd>${esc(p.sector)}</dd>` : ""}
+        <dt>Role</dt><dd>${esc(p.role)}</dd>
+        <dt>Year</dt><dd>${esc(p.year)}</dd>
+      </dl>
+      ${p.ui === "tracka" ? `<div class="m-block"><h4>Interface</h4>
+        <div class="ui-row" role="img" aria-label="Three Tracka screens: today's habits with streaks, goal progress, and a morning routine timeline">${phone("today")}${phone("goals")}${phone("routine")}</div>
+        ${p.figma ? `<iframe class="figma-embed" title="${esc(p.title)} prototype in Figma" src="${esc(figmaEmbed(p.figma))}" loading="lazy" allowfullscreen></iframe>` : ""}
+      </div>` : ""}
+      <div class="m-block"><h4>What I did</h4><p>${esc(p.did)}</p></div>
+      ${p.scope && p.scope.length ? `<div class="m-block"><h4>Scope</h4><ul>${p.scope.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+      <div class="m-block"><h4>Outcome</h4><p>${esc(p.outcome)}</p></div>
+      ${p.metric ? `<div class="m-block"><h4>Results</h4><p>${esc(p.metric)}</p></div>` : ""}
+      <div class="m-block"><h4>Tools</h4>
+        <div class="tools">${p.tools.map(t => `<span class="tool">${esc(t)}</span>`).join("")}${p.ai.map(t => `<span class="tool ai">${esc(t)}</span>`).join("")}</div>
+        <p style="color:var(--ink-2);font-size:.85rem;margin-top:10px">Tinted tags mark AI tools used on the project.</p>
+      </div>
+      <div class="m-actions">
+        ${p.figma ? `<a class="btn btn-ghost" href="${esc(p.figma)}" target="_blank" rel="noopener">Open in Figma ${icon("ext", 2)}</a>` : ""}
+        ${p.confidential
+          ? `<button class="btn btn-primary" type="button" data-request="${esc(p.title)}">Request details ${icon("arrow", 2)}</button>`
+          : `<button class="btn btn-primary" type="button" data-request-similar="${esc(p.title)}">Discuss a similar project ${icon("arrow", 2)}</button>`}
+        <button class="btn btn-ghost" type="button" data-close>Close</button>
+      </div>`;
+    modal.showModal();
+    modalBody.scrollTop = 0;
+    $("#modalClose").focus();
+  };
+  const closeModal = () => { if (modal.open) modal.close(); };
+  modal.addEventListener("close", () => { if (lastOpener && document.contains(lastOpener)) lastOpener.focus({ preventScroll: true }); });
+  modal.addEventListener("click", e => { if (e.target === modal || e.target.closest("[data-close]")) closeModal(); });
+  $("#modalClose").addEventListener("click", closeModal);
+
+  /* ---------- proficiencies: icon circle ---------- */
+  const PR = SITE.proficiencies;
+  const outer = PR.skills.map(s => ({ ...s, ring: "outer" }));
+  const inner = (PR.tools || []).map(t => ({ ...t, category: "Tools", ring: "inner" }));
+  const skills = [...outer, ...inner];
+  const cats = [...new Set(skills.map(s => s.category))];
+  const defaultCenter = `<span class="big">${outer.length} skills</span><span class="sub">and ${inner.length} tools I use</span>`;
+  const place = (i, n, r) => { const a = -Math.PI / 2 + (i / n) * Math.PI * 2; return `left:${(50 + r * Math.cos(a)).toFixed(3)}%;top:${(50 + r * Math.sin(a)).toFixed(3)}%`; };
+  $("#profMount").innerHTML = `
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">What I bring</p>
+      <h2 class="h2" id="profTitle">${hl(PR.heading)}</h2>
+      <p class="lead">${esc(PR.lead)}</p>
+    </div>
+    <div class="prof-panel glass lg liquid" data-reveal>
+      <div class="prof-layout">
+        <div class="ring" id="ring">
+          <div class="ring-line"></div><div class="ring-line inner"></div><div class="ring-core"></div>
+          <div class="ring-center" id="ringCenter" aria-hidden="true">${defaultCenter}</div>
+          ${skills.map((s, i) => {
+            const isTool = s.ring === "inner";
+            const pos = isTool ? place(i - outer.length, inner.length, 27) : place(i, outer.length, 44);
+            return `<button class="ico${isTool ? " tool" : ""}" type="button" data-i="${i}" data-cat="${esc(s.category)}" style="${pos}" aria-label="${esc(s.name)}, ${esc(s.category)}">${icon(s.icon, 1.6)}</button>`;
+          }).join("")}
+        </div>
+        <div class="legend">
+          <h3>Disciplines</h3>
+          ${cats.map(c => `<button type="button" data-cat="${esc(c)}" aria-pressed="false"><span>${esc(c)}</span><span class="count">${skills.filter(s => s.category === c).length}</span></button>`).join("")}
+          <p class="hint">Select a discipline again to clear it.</p>
+        </div>
+      </div>
+      <p class="ring-key"><span><i></i>Skills, outer ring</span><span><i class="sq"></i>Tools, inner ring</span></p>
+    </div>`;
+  const ring = $("#ring"), center = $("#ringCenter");
+  let pinned = null, activeCat = null;
+  const showSkill = i => {
+    $$(".ico", ring).forEach(b => b.classList.toggle("on", Number(b.dataset.i) === i));
+    if (i == null) {
+      center.innerHTML = activeCat
+        ? `<span class="cat">${esc(activeCat)}</span><span class="big">${skills.filter(s => s.category === activeCat).length} ${activeCat === "Tools" ? "tools" : "skills"}</span>`
+        : defaultCenter;
+      return;
+    }
+    const s = skills[i];
+    center.innerHTML = `<span class="cat">${esc(s.category)}</span><span class="big">${esc(s.name)}</span>`;
+  };
+  ring.addEventListener("pointerover", e => { const b = e.target.closest(".ico"); if (b) showSkill(Number(b.dataset.i)); });
+  ring.addEventListener("pointerout", e => { const b = e.target.closest(".ico"); if (b && !b.contains(e.relatedTarget)) showSkill(pinned); });
+  ring.addEventListener("focusin", e => { const b = e.target.closest(".ico"); if (b) showSkill(Number(b.dataset.i)); });
+  ring.addEventListener("focusout", () => showSkill(pinned));
+  ring.addEventListener("click", e => {
+    const b = e.target.closest(".ico"); if (!b) return;
+    const i = Number(b.dataset.i);
+    pinned = pinned === i ? null : i; showSkill(pinned ?? i);
+  });
+  const setCat = c => {
+    activeCat = c;
+    ring.classList.toggle("filtering", !!c);
+    $$(".ico", ring).forEach(b => b.classList.toggle("in-cat", b.dataset.cat === c));
+    $$(".legend button").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.cat === c)));
+    pinned = null; showSkill(null);
+  };
+  $$(".legend button").forEach(b => b.addEventListener("click", () => setCat(activeCat === b.dataset.cat ? null : b.dataset.cat)));
+
+  /* ---------- AI workflow ---------- */
+  const A = SITE.ai;
+  $("#aiMount").innerHTML = `
+    <div class="grid12 ai-grid">
+      <div class="ai-left" data-reveal>
+        <p class="eyebrow">AI Workflow</p>
+        <h2 class="h2" id="aiTitle" style="margin-top:14px">${hl(A.heading)}</h2>
+        <p class="ai-copy">${esc(A.copy)}</p>
+      </div>
+      <div class="ai-right">
+        <ol class="steps snap">
+          ${A.steps.map((s, i) => `<li class="step glass sheen" data-reveal>
+            <span class="num">${String(i + 1).padStart(2, "0")}</span>
+            <h3>${esc(s.name)}</h3>
+            <div class="row ai"><span>AI helps</span><p>${esc(s.ai)}</p></div>
+            <div class="row"><span>I decide</span><p>${esc(s.human)}</p></div>
+          </li>`).join("")}
+        </ol>
+        <p class="snap-hint">Swipe to see all six steps.</p>
+      </div>
+    </div>`;
+
+  /* ---------- advisory ---------- */
+  const V = SITE.advisory;
+  $("#advMount").innerHTML = `
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Advisory and retainers</p>
+      <h2 class="h2" id="advTitle">${hl(V.heading)}</h2>
+      <p class="lead">${esc(V.lead)}</p>
+    </div>
+    <div class="services snap">
+      ${V.services.map(s => `<article class="service glass sheen${s.featured ? " featured liquid" : ""}" data-reveal>
+        <p class="format">${esc(s.format)}</p>
+        <h3>${esc(s.name)}</h3>
+        <p>${esc(s.description)}</p>
+        <div class="suits"><strong>Suits</strong><p>${esc(s.suits)}</p></div>
+        <div class="service-foot">
+          <p class="price"><small>${esc(V.pricingLabel)}</small>${esc(V.pricing)}</p>
+          ${s.booking
+            ? `<a class="btn btn-primary btn-sm" href="${esc(SITE.calendly)}" target="_blank" rel="noopener" aria-label="Book a ${esc(s.name)} on Calendly">Book now</a>`
+            : `<a class="btn btn-primary btn-sm" href="#contact" data-service="${esc(s.name)}" aria-label="Enquire about ${esc(s.name)}">Enquire</a>`}
+        </div>
+      </article>`).join("")}
+    </div>
+    <p class="snap-hint">Swipe to see all four options.</p>`;
+
+  /* ---------- contact ---------- */
+  const K = SITE.contact;
+  $("#ctMount").innerHTML = `
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Contact</p>
+      <h2 class="h2" id="ctTitle">${hl(K.heading)}</h2>
+      <p class="lead">${esc(K.lead)}</p>
+    </div>
+    <div class="grid12 contact-layout">
+      <div class="form-col">
+        <form class="form glass lg liquid" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name"></span></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email"><span class="err" id="e-email"></span></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-org">Organisation <span class="opt">(optional)</span></label><input id="f-org" name="organisation" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="f-budget">Budget range <span class="opt">(optional)</span></label>
+              <select id="f-budget" name="budget"><option value="">Select a range</option>${K.budgets.map(b => `<option>${esc(b)}</option>`).join("")}</select></div>
+          </div>
+          <div class="field"><label for="f-need">What you need</label><textarea id="f-need" name="need" required aria-describedby="e-need" placeholder="A few lines on the project, the timeline and what success looks like."></textarea><span class="err" id="e-need"></span></div>
+          <div id="formStatus" class="form-status" role="status" aria-live="polite" hidden></div>
+          <div class="form-actions">
+            <small>Your details are used only to reply to you.</small>
+            <button class="btn btn-primary" type="submit" id="f-submit">Send message ${icon("arrow", 2)}</button>
+          </div>
+        </form>
+      </div>
+      <div class="links-col">
+        <div class="links-card glass sheen">
+          <a class="btn btn-primary" href="${esc(SITE.calendly)}" target="_blank" rel="noopener">${icon("cal", 1.8)} ${esc(SITE.primaryCta)}</a>
+          <a class="btn btn-ghost" href="${esc(K.whatsapp.link)}" target="_blank" rel="noopener">${WA} Chat on WhatsApp</a>
+          <div class="link-row"><div><span class="k">Email</span><span class="v" id="emailText">${esc(K.email)}</span></div><button class="copy" type="button" id="copyEmail">Copy</button></div>
+          <a class="link-row" href="${esc(K.linkedin.link)}" target="_blank" rel="noopener"><div><span class="k">LinkedIn</span><span class="v">${esc(K.linkedin.display)}</span></div>${icon("ext", 2)}</a>
+          <a class="link-row" href="${esc(K.instagram.link)}" target="_blank" rel="noopener"><div><span class="k">Instagram</span><span class="v">${esc(K.instagram.display)}</span></div>${icon("ext", 2)}</a>
+        </div>
+      </div>
+    </div>`;
+
+  const need = $("#f-need");
+  const goToForm = text => {
+    if (text) need.value = text;
+    $("#contact").scrollIntoView({ behavior: reduceMQ.matches ? "auto" : "smooth", block: "start" });
+    setTimeout(() => { need.focus({ preventScroll: true }); need.setSelectionRange(need.value.length, need.value.length); }, reduceMQ.matches ? 0 : 650);
+  };
+  document.addEventListener("click", e => {
+    const req = e.target.closest("[data-request]");
+    if (req) { e.preventDefault(); closeModal(); goToForm(`Request details: ${req.dataset.request}\n\n`); return; }
+    const sim = e.target.closest("[data-request-similar]");
+    if (sim) { e.preventDefault(); closeModal(); goToForm(`I would like to discuss a project similar to "${sim.dataset.requestSimilar}".\n\n`); return; }
+    const svc = e.target.closest("[data-service]");
+    if (svc) { e.preventDefault(); goToForm(`Enquiry: ${svc.dataset.service}\n\n`); return; }
+    const open = e.target.closest("[data-project]");
+    if (open) { const p = SITE.projects.find(x => x.id === open.dataset.project); if (p) openProject(p, open); }
+  });
+
+  $("#copyEmail").addEventListener("click", async e => {
+    const btn = e.currentTarget;
+    try { await navigator.clipboard.writeText(K.email); btn.textContent = "Copied"; }
+    catch (_) { const r = document.createRange(); r.selectNodeContents($("#emailText")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
+    setTimeout(() => (btn.textContent = "Copy"), 1800);
+  });
+
+  const form = $("#contactForm"), status = $("#formStatus");
+  const setErr = (id, msg) => { $("#f-" + id).setAttribute("aria-invalid", msg ? "true" : "false"); $("#e-" + id).textContent = msg; };
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(form));
+    const okName = !!d.name.trim(), okEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email.trim()), okNeed = !!d.need.trim();
+    setErr("name", okName ? "" : "Add your name so I know who to reply to.");
+    setErr("email", okEmail ? "" : "Add an email address in the form name@example.com.");
+    setErr("need", okNeed ? "" : "Add a line or two about what you need.");
+    const bad = !okName ? "name" : !okEmail ? "email" : !okNeed ? "need" : null;
+    if (bad) { $("#f-" + bad).focus(); return; }
+    status.hidden = false; status.className = "form-status";
+    if (!K.formEndpoint) {
+      status.innerHTML = `This form is not connected yet. Please email <strong>${esc(K.email)}</strong> or use the WhatsApp button.`;
+      return;
+    }
+    const btn = $("#f-submit"); btn.disabled = true; status.textContent = "Sending your message.";
+    try {
+      const res = await fetch(K.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(d) });
+      if (!res.ok) throw new Error(res.status);
+      status.className = "form-status ok";
+      status.textContent = `Thank you, ${d.name.trim().split(" ")[0]}. Your message has arrived and I will reply within two working days.`;
+      form.reset();
+    } catch (_) {
+      status.innerHTML = `Your message did not go through. Please try again, or email <strong>${esc(K.email)}</strong>.`;
+    } finally { btn.disabled = false; }
+  });
+
+  /* ---------- footer ---------- */
+  $("#footMount").innerHTML = `${logoHTML}<span>&copy; ${new Date().getFullYear()} ${esc(SITE.footer.owner)}. All rights reserved.</span>`;
+
+  /* ---------- cursor sheen ---------- */
+  document.addEventListener("pointermove", e => {
+    const el = e.target.closest && e.target.closest(".sheen");
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    el.style.setProperty("--mx", `${e.clientX - r.left}px`);
+    el.style.setProperty("--my", `${e.clientY - r.top}px`);
+  }, { passive: true });
+
+  /* ---------- active nav link ---------- */
+  const navLinks = $$(".nav a");
+  const spy = new IntersectionObserver(entries => entries.forEach(en => {
+    if (en.isIntersecting) navLinks.forEach(a => a.setAttribute("aria-current", String(a.getAttribute("href") === "#" + en.target.id)));
+  }), { rootMargin: "-45% 0px -50% 0px" });
+  SITE.nav.forEach(n => { const s = document.querySelector(n.href); if (s) spy.observe(s); });
+
+  /* ---------- motion preferences ---------- */
+  const applyMotion = () => {
+    const svg = document.getElementById("liquidAnim");
+    if (svg && svg.ownerSVGElement) { try { reduceMQ.matches ? svg.ownerSVGElement.pauseAnimations() : svg.ownerSVGElement.unpauseAnimations(); } catch (_) {} }
+  };
+  applyMotion();
+  reduceMQ.addEventListener ? reduceMQ.addEventListener("change", applyMotion) : reduceMQ.addListener(applyMotion);
+
+  /* ---------- fade-ups for content below the first screen ---------- */
+  if (!reduceMQ.matches && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(entries => entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.remove("pre"); io.unobserve(en.target); }
+    }), { rootMargin: "0px 0px -8% 0px" });
+    $$("[data-reveal]").forEach(el => {
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add("pre", "reveal-in"); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
