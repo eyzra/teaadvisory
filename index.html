@@ -397,6 +397,41 @@ dialog.modal::backdrop{background:rgba(0,0,0,.6);-webkit-backdrop-filter:blur(6p
 .price{font-family:var(--font-display);font-weight:700;font-size:.84rem}
 .price small{display:block;font-weight:600;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
 .service.featured{background:linear-gradient(160deg,rgba(11,76,126,.3),rgba(255,255,255,.05) 60%)}
+.service-top{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:24px}
+.service .idx{font-family:var(--font-display);font-weight:700;font-size:.74rem;color:var(--ink-2);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+.flag{padding:3px 10px;border-radius:999px;background:var(--sea);color:var(--on-sea);font-family:var(--font-display);font-weight:700;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 0 18px -4px var(--glow)}
+.includes{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.includes li{display:grid;grid-template-columns:16px minmax(0,1fr);gap:9px;align-items:start;font-size:.9rem;line-height:1.45}
+.includes svg{width:16px;height:16px;color:var(--tide);margin-top:2px}
+.service-foot .btn{white-space:normal;text-align:center}
+
+/* hero credentials line */
+/* separator dots sit in the gap; overflow clips the one that would lead a wrapped row */
+.creds{list-style:none;margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:6px 26px;overflow:hidden;font-family:var(--font-display);font-weight:600;font-size:.74rem;letter-spacing:.06em;color:var(--ink-2)}
+.creds li{position:relative}
+.creds li::before{content:"";position:absolute;left:-15px;top:50%;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:var(--tide);opacity:.7}
+
+/* FAQ */
+.faq-layout{align-items:start}
+@media (min-width:980px){.faq-layout .faq-head{grid-column:1/span 4;position:sticky;top:110px}.faq-layout .faq-list{grid-column:5/span 8}}
+.faq-list{display:grid;gap:10px}
+.faq-item{border-radius:20px;overflow:hidden}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px;font-family:var(--font-display);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;line-height:1.35}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{color:var(--tide)}
+.faq-item summary:focus-visible{outline:2px solid var(--tide);outline-offset:-2px;border-radius:20px}
+.faq-item .plus{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .4s var(--ease),background-color .25s,border-color .25s}
+.faq-item .plus svg{width:14px;height:14px}
+.faq-item[open] .plus{transform:rotate(45deg);background:var(--sea);border-color:transparent}
+.faq-item[open]{border-color:rgba(124,196,242,.35)}
+.faq-item .ans{padding:0 22px 20px;color:var(--ink-2);max-width:68ch}
+.faq-more{color:var(--ink-2);margin-top:14px;font-size:.95rem}
+
+/* booking microcopy */
+.book-note{list-style:none;margin:-2px 0 4px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;overflow:hidden;font-size:.78rem;color:var(--ink-2)}
+.book-note li{position:relative}
+.book-note li::before{content:"";position:absolute;left:-11px;top:50%;width:3px;height:3px;margin-top:-1.5px;border-radius:50%;background:var(--ink-2)}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 /* contact */
 .contact-layout{align-items:start}
@@ -482,6 +517,7 @@ footer{padding-block:32px 48px;border-top:1px solid var(--line-soft);margin-top:
     <section class="section" id="proficiencies" aria-labelledby="profTitle"><div class="wrap" id="profMount"></div></section>
     <section class="section" id="ai-workflow" aria-labelledby="aiTitle"><div class="wrap" id="aiMount"></div></section>
     <section class="section" id="advisory" aria-labelledby="advTitle"><div class="wrap" id="advMount"></div></section>
+    <section class="section" id="faq" aria-labelledby="faqTitle"><div class="wrap" id="faqMount"></div></section>
     <section class="section" id="contact" aria-labelledby="ctTitle"><div class="wrap" id="ctMount"></div></section>
   </main>
 
@@ -512,13 +548,14 @@ const SITE = {
   brand: { prefix: "tea", suffix: "advisory", owner: "Ezra Anya" },
 
   /* Your Calendly link. Every "Book a strategy session" button opens it. */
-  calendly: "https://calendly.com/your-handle/strategy-session",
+  calendly: "https://calendly.com/ezraanya/talk-w-tea",
 
   nav: [
     { label: "Portfolio", href: "#portfolio" },
     { label: "Proficiencies", href: "#proficiencies" },
     { label: "AI Workflow", href: "#ai-workflow" },
     { label: "Advisory", href: "#advisory" },
+    { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" }
   ],
 
@@ -528,8 +565,8 @@ const SITE = {
     chip: "Open to advisory and retainer engagements.",
     headline: "Brand, media and communications strategy for organisations that want to be *understood*.",
     bio: [
-      "This is Ezra Anya, a product and brand designer and communications strategist. I work on the branding and communications team at a digital telecommunications company, where I lead brand strategy, design direction and messaging across digital products.",
-      "Beyond that role, I advise founders, institutions and personal brands on corporate communications, media and PR, and brand strategy. I build campaigns and video stories that carry those strategies to the public. I hold a first-class degree in Cybersecurity, which shapes how I think about systems, trust and clarity. I am also an author and public speaker, and AI sits inside my workflow from first research to final polish."
+      "This is Ezra Anya, a product and brand designer and communications strategist. I lead brand strategy, design direction and messaging for organisations across several industries, most of all a pan-African consulting firm and a digital telecommunications company.",
+      "I also advise founders, institutions and personal brands on corporate communications, media and PR, and brand strategy. I build campaigns and video stories that carry those strategies to the public. I hold a first-class degree in Cybersecurity, which shapes how I think about systems, trust and clarity. I am also an author and public speaker, and AI sits inside my workflow from first research to final polish."
     ],
     /* Put your photo at photo/ezra.jpg (portrait, at least 900 x 1200). Until it exists, a monogram shows. */
     photo: "photo/ezra.jpg",
@@ -539,7 +576,8 @@ const SITE = {
       { label: "Advises on", value: "Corporate communications, media and PR, brand strategy" },
       { label: "Builds", value: "Campaigns, brand systems, product experiences and brand films" }
     ],
-    portfolioButton: "View portfolio"
+    portfolioButton: "View portfolio",
+    credentials: ["Brand strategy", "Corporate communications", "Product design", "Video storytelling", "First-class Cybersecurity graduate"]
   },
 
   sectors: {
@@ -558,9 +596,9 @@ const SITE = {
     lead: "Experience, education and the projects behind them.",
     experienceHeading: "Experience",
     experience: [
-      { role: "Corporate Communications Specialist", org: "Software and telecommunications company", dates: "2025 to date",
+      { role: "Corporate Communications Specialist", org: "Digital telecommunications company", dates: "2025 to 2026",
         text: "Leads brand positioning, messaging and corporate identity across a portfolio of digital products. Writes product content and video scripts, reviews the company's digital presence, and trains the team on design tools." },
-      { role: "Brand and Content Lead", org: "People development consultancy", dates: "2025 to date",
+      { role: "Brand and Content Lead", org: "Pan-African consulting firm", dates: "2025 to date",
         text: "Leads brand strategy, content and digital communications. Built the company website, runs the weekly newsletter and social channels, and designs materials for its accountability programmes and corporate clients." },
       { role: "Front End Engineer", org: "Digital studio", dates: "2020 to 2024",
         text: "Built responsive websites and interfaces for client brands, turning design files into fast, accessible front-end code." }
@@ -603,7 +641,7 @@ const SITE = {
       metric: "Adoption figures available as ranges on request.", tools: ["Figma", "Microsoft Office"], ai: ["Claude"] },
 
     { id: "consultancy-content", segment: "media", title: "Content and newsletter system for a consultancy",
-      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      client: "Pan-African consulting firm", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
       did: "Runs a weekly email newsletter and the social channels of a people development consultancy, with long-form posts, reels and carousels written in one brand voice.",
       scope: ["Weekly newsletter on Substack", "LinkedIn, Instagram and YouTube content", "Content calendar tied to brand pillars"],
       outcome: "A steady publishing rhythm and a subscriber community that grows week on week.",
@@ -642,7 +680,7 @@ const SITE = {
       metric: "", tools: ["Figma", "Microsoft Office"], ai: ["Claude"] },
 
     { id: "proposal-decks", segment: "visual", title: "Proposals and decks for institutional clients",
-      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      client: "Pan-African consulting firm", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
       did: "Produced a corporate services proposal, lecture briefs, event materials and presentation decks for institutional and organisational clients.",
       scope: ["Corporate services proposal", "Presentation decks", "Lecture briefs and event materials"],
       outcome: "A consistent, professional look in every document a client receives.",
@@ -656,7 +694,7 @@ const SITE = {
       metric: "", tools: ["Figma", "Adobe Photoshop"], ai: ["Claude"] },
 
     { id: "social-visuals", segment: "visual", title: "Social and newsletter visuals",
-      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      client: "Pan-African consulting firm", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
       did: "Designs carousels, newsletter headers and post graphics in a shared visual system so every channel looks like one brand.",
       scope: ["Carousel templates", "Newsletter header artwork", "Post graphics"],
       outcome: "A recognisable look across LinkedIn, Instagram, YouTube and email.",
@@ -670,7 +708,7 @@ const SITE = {
       metric: "", tools: ["Figma", "Microsoft Office"], ai: ["Claude"] },
 
     { id: "consultancy-brand", segment: "branding", title: "Brand ecosystem for a consultancy and its programmes",
-      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      client: "Pan-African consulting firm", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
       did: "Leads the brand strategy for a consultancy and the structured programmes it runs, from positioning and voice to how each programme sits under the main brand.",
       scope: ["Brand positioning and voice", "Programme brand architecture", "Content pillars"],
       outcome: "A brand family where the consultancy and its programmes point to each other.",
@@ -691,7 +729,7 @@ const SITE = {
       metric: "", tools: ["Adobe Premiere Pro"], ai: ["Claude"] },
 
     { id: "consultancy-video", segment: "video", title: "Reels and long-form video for a consultancy",
-      client: "People development consultancy", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
+      client: "Pan-African consulting firm", sector: "Leadership and people development", confidential: false, role: "Brand and Content Lead", year: "2025",
       did: "Produces reels and YouTube content, from script to edit, with descriptions written for each platform.",
       scope: ["Reels and short-form cuts", "Long-form YouTube edits", "Video descriptions"],
       outcome: "Video that carries the consultancy's ideas to new audiences each week.",
@@ -767,27 +805,54 @@ const SITE = {
     lead: "Four ways to work together. Each one starts with a conversation about what you need.",
     pricingLabel: "Pricing",
     pricing: "On request",
+    /* flag: short label on the card. cta: button text. booking: true sends the button to Calendly. */
     services: [
-      { name: "Strategy Session", format: "One-off, 60 to 90 minutes", booking: true,
+      { name: "Strategy Session", format: "One-off, 60 to 90 minutes", booking: true, cta: "Book a session",
         description: "One focused session on a single communications, brand or media question. You leave with clear next steps in writing.",
+        includes: ["Short intake questions before we meet", "A 60 to 90 minute video call", "Written summary and next steps"],
         suits: "Founders and leaders who need a sharp outside view before a decision." },
-      { name: "Project Engagement", format: "Defined scope",
+      { name: "Project Engagement", format: "Defined scope", cta: "Enquire about a project",
         description: "A fixed scope with a clear end point, such as a brand strategy, a campaign or a communications plan.",
+        includes: ["Discovery and a written brief", "Strategy, messaging or campaign plan", "Final assets and a handover session"],
         suits: "Organisations with a launch, rebrand or campaign on the calendar." },
-      { name: "Monthly Retainer", format: "Ongoing", featured: true,
+      { name: "Monthly Retainer", format: "Ongoing", featured: true, flag: "Most requested", cta: "Apply for a retainer",
         description: "Ongoing advisory and oversight of your communications, with a monthly review of what worked and what comes next.",
+        includes: ["Advisory on call when decisions come up", "Review of key content before it goes out", "A monthly performance review"],
         suits: "Teams that want a senior communications partner without a full-time hire." },
-      { name: "Workshop and Speaking", format: "Training and talks",
+      { name: "Workshop and Speaking", format: "Training and talks", cta: "Request a workshop",
         description: "Training for your team on communications, branding and design, or a talk for your event.",
+        includes: ["A session shaped around your team", "Slides and take-home notes", "Follow-up resources after the day"],
         suits: "Companies, institutions and conferences building in-house capability." }
+    ]
+  },
+
+  faq: {
+    heading: "Questions people *ask*.",
+    items: [
+      { q: "What kind of organisations do you work with?",
+        a: "Founders, consulting firms, telecommunications and technology companies, startup banks, schools, churches and personal brands. Most of my work is with organisations that are growing and need their story to keep up." },
+      { q: "How does a strategy session work?",
+        a: "Book a time through the calendar. Before we meet, I send a few short questions so the call starts with your real problem. We talk for 60 to 90 minutes on video, and you receive a written summary with next steps within two working days." },
+      { q: "What does a monthly retainer include?",
+        a: "Ongoing advice on communications and brand decisions, a review of important content before it goes out, and a monthly review of what worked and what comes next. We agree the scope and the term together before we start." },
+      { q: "How much do you charge?",
+        a: "Every engagement is priced on its scope. After a first conversation, you get a written proposal with a fixed fee, so you know the full cost before any work begins." },
+      { q: "Do you sign NDAs?",
+        a: "Yes. Several engagements on this site are under NDA, which is why some project names and figures are withheld. I am happy to sign yours before we discuss details." },
+      { q: "How do you use AI with client work?",
+        a: "I use AI to speed up research, drafting and early concepts. Confidential client material stays out of AI tools unless you agree to it, and every piece of work is reviewed and signed off by me before it reaches you." },
+      { q: "Can you work with teams outside Nigeria?",
+        a: "Yes. Sessions, reviews and workshops run on video, and I work with clients across Africa and further afield." }
     ]
   },
 
   contact: {
     heading: "Start a *conversation*.",
     lead: "Tell me what you are working on. I reply within two working days.",
-    /* Paste a Formspree (or similar) endpoint here to receive submissions. */
-    formEndpoint: "",
+    /* Formspree endpoint. Submissions arrive in the inbox set on the Formspree form. */
+    formEndpoint: "https://formspree.io/f/xqpeywla",
+    formSubject: "New enquiry from the teaadvisory website",
+    bookingNote: ["Pick a time that suits you", "No commitment to book", "You speak with Ezra directly"],
     email: "ezraanya14@gmail.com",
     whatsapp: { display: "+234 701 295 4115", link: "https://wa.me/2347012954115" },
     linkedin: { display: "linkedin.com/in/theezraanya", link: "https://www.linkedin.com/in/theezraanya/" },
@@ -840,6 +905,8 @@ const ICONS = {
   higgs: '<rect x="2" y="8" width="13" height="11" rx="2"/><path d="M15 12l5-3v9l-5-3M19 1.8l.7 1.5 1.5.7-1.5.7-.7 1.5-.7-1.5-1.5-.7 1.5-.7z"/>',
   frame: '<path d="M7 3v18M17 3v18M3 7h18M3 17h18"/>',
   prompt: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 10l3 2-3 2M12 15h5"/>',
+  check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
   award: '<circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   down: '<path d="M12 5v14M6 13l6 6 6-6"/>',
@@ -896,6 +963,7 @@ const ICONS = {
           <a class="btn btn-ghost" href="#portfolio">${esc(H.portfolioButton)} ${icon("down", 2)}</a>
           ${bookBtn()}
         </div>
+        ${H.credentials && H.credentials.length ? `<ul class="creds" aria-label="Areas of expertise">${H.credentials.map(c => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
       </div>
       <figure class="portrait glass lg" style="margin:0">
         <div class="fallback" aria-hidden="true"><span>${esc(H.monogram)}</span></div>
@@ -1195,20 +1263,44 @@ const ICONS = {
       <p class="lead">${esc(V.lead)}</p>
     </div>
     <div class="services snap">
-      ${V.services.map(s => `<article class="service glass sheen${s.featured ? " featured liquid" : ""}" data-reveal>
-        <p class="format">${esc(s.format)}</p>
-        <h3>${esc(s.name)}</h3>
+      ${V.services.map((s, i) => `<article class="service glass sheen${s.featured ? " featured liquid" : ""}" data-reveal>
+        <div class="service-top"><span class="idx">${String(i + 1).padStart(2, "0")}</span>${s.flag ? `<span class="flag">${esc(s.flag)}</span>` : ""}</div>
+        <div><p class="format">${esc(s.format)}</p><h3 style="margin-top:4px">${esc(s.name)}</h3></div>
         <p>${esc(s.description)}</p>
+        ${s.includes ? `<ul class="includes" aria-label="Includes">${s.includes.map(x => `<li>${icon("check", 2.2)}<span>${esc(x)}</span></li>`).join("")}</ul>` : ""}
         <div class="suits"><strong>Suits</strong><p>${esc(s.suits)}</p></div>
         <div class="service-foot">
           <p class="price"><small>${esc(V.pricingLabel)}</small>${esc(V.pricing)}</p>
           ${s.booking
-            ? `<a class="btn btn-primary btn-sm" href="${esc(SITE.calendly)}" target="_blank" rel="noopener" aria-label="Book a ${esc(s.name)} on Calendly">Book now</a>`
-            : `<a class="btn btn-primary btn-sm" href="#contact" data-service="${esc(s.name)}" aria-label="Enquire about ${esc(s.name)}">Enquire</a>`}
+            ? `<a class="btn btn-primary btn-sm" href="${esc(SITE.calendly)}" target="_blank" rel="noopener" aria-label="${esc(s.cta || "Book now")} on Calendly">${esc(s.cta || "Book now")}</a>`
+            : `<a class="btn btn-primary btn-sm" href="#contact" data-service="${esc(s.name)}">${esc(s.cta || "Enquire")}</a>`}
         </div>
       </article>`).join("")}
     </div>
     <p class="snap-hint">Swipe to see all four options.</p>`;
+
+  /* ---------- FAQ ---------- */
+  const F = SITE.faq;
+  $("#faqMount").innerHTML = `
+    <div class="grid12 faq-layout">
+      <div class="faq-head section-head" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2" id="faqTitle">${hl(F.heading)}</h2>
+        <p class="faq-more">Something else on your mind? <a href="#contact">Send me a message</a>.</p>
+      </div>
+      <div class="faq-list">
+        ${F.items.map((f, i) => `<details class="faq-item glass" data-reveal${i === 0 ? " open" : ""}>
+          <summary>${esc(f.q)}<span class="plus" aria-hidden="true">${icon("plus", 2)}</span></summary>
+          <p class="ans">${esc(f.a)}</p>
+        </details>`).join("")}
+      </div>
+    </div>`;
+  /* FAQ structured data for search engines, built from SITE.faq so it never drifts */
+  const ld = document.createElement("script"); ld.type = "application/ld+json";
+  ld.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: F.items.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) });
+  document.head.appendChild(ld);
+  /* one answer open at a time keeps the section short */
+  $$(".faq-item").forEach(d => d.addEventListener("toggle", () => { if (d.open) $$(".faq-item").forEach(o => { if (o !== d) o.open = false; }); }));
 
   /* ---------- contact ---------- */
   const K = SITE.contact;
@@ -1221,6 +1313,8 @@ const ICONS = {
     <div class="grid12 contact-layout">
       <div class="form-col">
         <form class="form glass lg liquid" id="contactForm" novalidate>
+          <input type="hidden" name="_subject" value="${esc(K.formSubject)}">
+          <div class="hp" aria-hidden="true"><label for="f-gotcha">Leave this empty</label><input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
           <div class="form-row">
             <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name"></span></div>
             <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email"><span class="err" id="e-email"></span></div>
@@ -1241,6 +1335,7 @@ const ICONS = {
       <div class="links-col">
         <div class="links-card glass sheen">
           <a class="btn btn-primary" href="${esc(SITE.calendly)}" target="_blank" rel="noopener">${icon("cal", 1.8)} ${esc(SITE.primaryCta)}</a>
+          ${K.bookingNote ? `<ul class="book-note">${K.bookingNote.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
           <a class="btn btn-ghost" href="${esc(K.whatsapp.link)}" target="_blank" rel="noopener">${WA} Chat on WhatsApp</a>
           <div class="link-row"><div><span class="k">Email</span><span class="v" id="emailText">${esc(K.email)}</span></div><button class="copy" type="button" id="copyEmail">Copy</button></div>
           <a class="link-row" href="${esc(K.linkedin.link)}" target="_blank" rel="noopener"><div><span class="k">LinkedIn</span><span class="v">${esc(K.linkedin.display)}</span></div>${icon("ext", 2)}</a>
@@ -1277,7 +1372,8 @@ const ICONS = {
   const setErr = (id, msg) => { $("#f-" + id).setAttribute("aria-invalid", msg ? "true" : "false"); $("#e-" + id).textContent = msg; };
   form.addEventListener("submit", async e => {
     e.preventDefault();
-    const d = Object.fromEntries(new FormData(form));
+    const fd = new FormData(form);
+    const d = Object.fromEntries(fd);
     const okName = !!d.name.trim(), okEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email.trim()), okNeed = !!d.need.trim();
     setErr("name", okName ? "" : "Add your name so I know who to reply to.");
     setErr("email", okEmail ? "" : "Add an email address in the form name@example.com.");
@@ -1289,16 +1385,30 @@ const ICONS = {
       status.innerHTML = `This form is not connected yet. Please email <strong>${esc(K.email)}</strong> or use the WhatsApp button.`;
       return;
     }
-    const btn = $("#f-submit"); btn.disabled = true; status.textContent = "Sending your message.";
+    /* Formspree AJAX submission: FormData body plus Accept: application/json returns JSON instead of a redirect */
+    const btn = $("#f-submit"); btn.disabled = true; btn.setAttribute("aria-busy", "true"); status.textContent = "Sending your message.";
     try {
-      const res = await fetch(K.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(d) });
-      if (!res.ok) throw new Error(res.status);
-      status.className = "form-status ok";
-      status.textContent = `Thank you, ${d.name.trim().split(" ")[0]}. Your message has arrived and I will reply within two working days.`;
-      form.reset();
+      const res = await fetch(K.formEndpoint, { method: "POST", body: fd, headers: { Accept: "application/json" } });
+      if (res.ok) {
+        status.className = "form-status ok";
+        status.textContent = `Thank you, ${d.name.trim().split(" ")[0]}. Your message has arrived and I will reply within two working days.`;
+        form.reset();
+        return;
+      }
+      /* Formspree validation errors come back as { errors: [{ field, message }] } */
+      let data = {}; try { data = await res.json(); } catch (_) {}
+      const errs = Array.isArray(data.errors) ? data.errors : [];
+      const fieldMap = { name: "name", email: "email", need: "need" };
+      let first = null;
+      errs.forEach(er => { const id = fieldMap[er.field]; if (id) { setErr(id, er.message); first = first || id; } });
+      status.innerHTML = errs.length && !first
+        ? `${esc(errs.map(er => er.message).join(" "))} You can also email <strong>${esc(K.email)}</strong>.`
+        : first ? "Please fix the highlighted field and send again."
+        : `Your message did not go through. Please try again, or email <strong>${esc(K.email)}</strong>.`;
+      if (first) $("#f-" + first).focus();
     } catch (_) {
-      status.innerHTML = `Your message did not go through. Please try again, or email <strong>${esc(K.email)}</strong>.`;
-    } finally { btn.disabled = false; }
+      status.innerHTML = `Your message could not be sent from this connection. Please try again, or email <strong>${esc(K.email)}</strong>.`;
+    } finally { btn.disabled = false; btn.removeAttribute("aria-busy"); }
   });
 
   /* ---------- footer ---------- */
